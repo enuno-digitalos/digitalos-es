@@ -1,55 +1,59 @@
-const dolores = [
-  "Estoy hasta arriba de trabajo, pero al final del día siento que sigo igual: saltando entre tareas, sin acabar ninguna importante.",
-  "Tengo notas en Notion, mil grupos de WhatsApp, recordatorios en el móvil, listas en papel... pero cuando necesito algo, tardo una eternidad en encontrarlo.",
-  "Empiezo cada semana con intención de organizarme mejor, pero el jueves ya estoy atrapado en la misma situación.",
-];
-
 export default function PainPoints() {
   return (
-    <section className="py-20 px-6">
+    <section className="py-20 px-6" style={{ backgroundColor: "var(--bg)" }}>
       <div className="max-w-3xl mx-auto">
-        <div
-          className="rounded-2xl p-8 md:p-12"
-          style={{ backgroundColor: "var(--card)", border: "1px solid var(--border)" }}
+        <h2
+          className="text-3xl md:text-[2.8rem] leading-tight mb-6"
+          style={{ fontFamily: "var(--font-libre)", color: "var(--navy)" }}
         >
-          <h2
-            className="text-3xl md:text-4xl mb-4"
-            style={{ fontFamily: "var(--font-libre), 'Libre Baskerville', serif", color: "var(--navy)" }}
-          >
-            ¿Te suena familiar?
-          </h2>
-          <p
-            className="text-base mb-8"
-            style={{ fontFamily: "var(--font-work), 'Work Sans', sans-serif", color: "var(--muted)" }}
-          >
-            El caos digital no es falta de disciplina. <strong style={{ color: "var(--text)" }}>Es falta de sistema.</strong>
-          </p>
+          ¿Te suena?
+        </h2>
 
-          <div className="space-y-4 mb-8">
-            {dolores.map((d, i) => (
-              <div
-                key={i}
-                className="p-5 rounded-xl border-l-[3px] italic"
-                style={{
-                  fontFamily: "var(--font-libre), 'Libre Baskerville', serif",
-                  fontSize: "0.95rem",
-                  backgroundColor: "var(--bg)",
-                  borderLeftColor: "var(--orange)",
-                  color: "var(--muted)",
-                }}
-              >
-                &ldquo;{d}&rdquo;
-              </div>
-            ))}
+        <div
+          className="rounded-2xl p-8 md:p-10 mb-8"
+          style={{ backgroundColor: "var(--card)", boxShadow: "var(--shadow)" }}
+        >
+          <div className="space-y-6" style={{ fontFamily: "var(--font-work)", color: "var(--text)" }}>
+            <div className="flex gap-4 items-start">
+              <span className="text-2xl shrink-0" style={{ color: "var(--orange)" }}>&ldquo;</span>
+              <p className="text-base leading-relaxed italic" style={{ color: "var(--muted)" }}>
+                Estoy hasta arriba de trabajo, pero al final del día siento que sigo igual:
+                saltando entre tareas, sin acabar ninguna importante.
+              </p>
+            </div>
+
+            <div className="border-t" style={{ borderColor: "var(--border)" }} />
+
+            <div className="flex gap-4 items-start">
+              <span className="text-2xl shrink-0" style={{ color: "var(--orange)" }}>&ldquo;</span>
+              <p className="text-base leading-relaxed italic" style={{ color: "var(--muted)" }}>
+                Tengo notas en Notion, mil grupos de WhatsApp, recordatorios en el móvil,
+                listas en papel... pero cuando necesito algo, tardo una eternidad en encontrarlo.
+              </p>
+            </div>
+
+            <div className="border-t" style={{ borderColor: "var(--border)" }} />
+
+            <div className="flex gap-4 items-start">
+              <span className="text-2xl shrink-0" style={{ color: "var(--orange)" }}>&ldquo;</span>
+              <p className="text-base leading-relaxed italic" style={{ color: "var(--muted)" }}>
+                Empiezo cada semana con intención de organizarme mejor, pero el jueves ya
+                estoy atrapado en la misma situación.
+              </p>
+            </div>
           </div>
-
-          <p
-            className="text-lg font-medium"
-            style={{ fontFamily: "var(--font-work), 'Work Sans', sans-serif", color: "var(--navy)" }}
-          >
-            El problema no eres tú. Es el sistema que estás usando — o la ausencia de él.
-          </p>
         </div>
+
+        <p
+          className="text-xl font-medium leading-relaxed"
+          style={{ fontFamily: "var(--font-work)", color: "var(--navy)" }}
+        >
+          El caos digital no es falta de disciplina. <strong>Es falta de sistema.</strong>
+          <br />
+          <span style={{ color: "var(--muted)", fontWeight: 400, fontSize: "1.05rem" }}>
+            El problema no eres tú. Es el sistema que estás usando — o la ausencia de él.
+          </span>
+        </p>
       </div>
     </section>
   );

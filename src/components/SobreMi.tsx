@@ -1,39 +1,47 @@
 export default function SobreMi() {
   return (
-    <section id="sobre-mi" className="py-20 px-6">
+    <section id="sobre-mi" className="py-20 px-6" style={{ backgroundColor: "var(--bg-alt)" }}>
       <div className="max-w-4xl mx-auto">
         <div
-          className="rounded-2xl p-8 md:p-12 flex flex-col md:flex-row gap-10 items-start"
-          style={{ backgroundColor: "var(--card)", border: "1px solid var(--border)" }}
+          className="rounded-3xl p-8 md:p-14 flex flex-col md:flex-row gap-10 items-start"
+          style={{ backgroundColor: "var(--navy)" }}
         >
           <div className="flex-1">
             <h2
-              className="text-3xl md:text-4xl mb-6"
-              style={{ fontFamily: "var(--font-libre), 'Libre Baskerville', serif", color: "var(--navy)" }}
+              className="text-3xl md:text-4xl mb-6 text-white"
+              style={{ fontFamily: "var(--font-libre)" }}
             >
               Hola, soy Raquel.
             </h2>
-            <div className="space-y-4" style={{ fontFamily: "var(--font-work), 'Work Sans', sans-serif", color: "var(--muted)" }}>
+            <div className="space-y-4 text-white/80" style={{ fontFamily: "var(--font-work)" }}>
               <p className="text-base leading-relaxed">
-                Diseño y organizo ecosistemas digitales para profesionales que necesitan
-                recuperar foco, tiempo y control. Integro tecnología e IA de forma
-                práctica y accesible.
+                En los últimos años he formado y acompañado a más de 6.000 emprendedores,
+                creadores y mentes inquietas.
               </p>
               <p className="text-base leading-relaxed">
-                Vivo en Copenhague, trabajo en remoto y llevo años ayudando a emprendedores
-                y profesionales hispanohablantes a dejar de improvisar con su organización digital.
+                Demasiadas herramientas, demasiada información, muy poco sistema.
+                Eso es lo que resuelvo.
               </p>
-              <p className="text-base leading-relaxed font-medium" style={{ color: "var(--navy)" }}>
-                Si hay caos, la IA amplifica tu caos. Primero el orden. Después, todo lo demás.
+              <p className="text-base leading-relaxed">
+                No soy gurú ni experta en trucos. Confío más en los sistemas que en las promesas.
+                Soy una persona extrañamente normal en un mundo que va demasiado rápido.
+              </p>
+              <p className="text-base leading-relaxed font-medium text-white">
+                Mi enfoque se resume en una palabra: simplificar.
+                <br />
+                Más claridad, más impacto, menos esfuerzo.
+              </p>
+              <p className="text-sm text-white/50">
+                Vivo en Copenhague. Trabajo en remoto. Mi equipo más fiel tiene cuatro patas.
               </p>
             </div>
           </div>
-          <div className="w-full md:w-64 shrink-0">
+          <div className="w-full md:w-60 shrink-0">
             <div
-              className="w-full aspect-square rounded-2xl flex items-center justify-center"
-              style={{ backgroundColor: "var(--bg)", border: "1px solid var(--border)" }}
+              className="w-full aspect-[3/4] rounded-2xl flex items-center justify-center"
+              style={{ backgroundColor: "rgba(255,255,255,0.08)" }}
             >
-              <span className="text-xs" style={{ fontFamily: "var(--font-work), 'Work Sans', sans-serif", color: "var(--muted)" }}>
+              <span className="text-xs text-white/30" style={{ fontFamily: "var(--font-work)" }}>
                 [Foto de Raquel]
               </span>
             </div>

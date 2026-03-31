@@ -4,7 +4,10 @@ import { NextResponse } from "next/server";
 // Set GOOGLE_PLACES_API_KEY in Vercel env vars to enable live reviews
 // Without the key, the component uses fallback data
 
-const PLACE_ID = "ChIJx4W6_xxxxxx"; // Replace with real Place ID
+// CID: 8494171885757166874 — "en·uno by Raquel Vázquez"
+// To find Place ID: use Google Places API findplacefromtext with the business name
+// For now using CID-based lookup
+const PLACE_ID = process.env.GOOGLE_PLACE_ID || "";
 const CACHE_TTL = 3600 * 1000; // 1 hour cache
 
 let cachedData: { data: unknown; timestamp: number } | null = null;

@@ -11,6 +11,7 @@ import SobreMi from "@/components/SobreMi";
 import GoogleReviews from "@/components/GoogleReviews";
 import Newsletter from "@/components/Newsletter";
 import CTAFinal from "@/components/CTAFinal";
+import OtrosPrograms from "@/components/OtrosProgramas";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -22,14 +23,15 @@ export default function Home() {
         <Logos />
         <PainPoints />
         <Transformation />
+        <SobreMi />
         <Programa />
         <Testimonios />
         <Oferta />
         <FAQ />
-        <SobreMi />
         <GoogleReviews />
         <Newsletter />
         <CTAFinal />
+        <OtrosPrograms />
       </main>
       <Footer />
     </>

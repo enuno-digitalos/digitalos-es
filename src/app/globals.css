@@ -3,16 +3,17 @@
 @layer base {
   :root {
     --navy: #2F4156;
-    --navy-dark: #243040;
+    --navy-dark: #1e2d3d;
     --orange: #FF6A00;
-    --orange-light: #fff3eb;
-    --bg: #F7F5F2;
-    --bg-warm: #efe9e1;
+    --orange-soft: #fff0e6;
+    --peach: #fde8d8;
+    --bg: #faf8f5;
+    --bg-alt: #f3efe9;
     --card: #ffffff;
     --text: #1a2535;
-    --muted: #7a8a9a;
-    --border: #e4dfd8;
-    --radius: 12px;
+    --muted: #6b7a8a;
+    --border: #e8e3dc;
+    --shadow: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -22,5 +23,10 @@
     background-color: var(--bg);
     color: var(--text);
     -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background-color: var(--peach);
+    color: var(--navy);
   }
 }
