@@ -8,7 +8,7 @@ export default function Footer() {
               className="font-bold text-lg text-white"
               style={{ fontFamily: "var(--font-libre), 'Libre Baskerville', serif" }}
             >
-              DIGITAL·OS
+              DIGITAL OS
             </p>
             <p
               className="text-xs text-white/40 mt-1"

@@ -18,7 +18,7 @@ export default function Nav() {
           className="text-xl font-bold tracking-tight"
           style={{ fontFamily: "var(--font-libre)", color: "var(--navy)" }}
         >
-          DIGITAL·OS
+          DIGITAL OS
         </a>
 
         <div className="hidden md:flex items-center gap-7 text-[0.85rem]" style={{ fontFamily: "var(--font-work)", color: "var(--muted)" }}>

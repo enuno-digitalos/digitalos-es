@@ -7,13 +7,13 @@
     --orange: #FF6A00;
     --orange-soft: #fff0e6;
     --peach: #fde8d8;
-    --bg: #faf8f5;
-    --bg-alt: #f3efe9;
+    --bg: #faf7f3;
+    --bg-alt: #f2ede6;
     --card: #ffffff;
-    --text: #1a2535;
-    --muted: #6b7a8a;
-    --border: #e8e3dc;
-    --shadow: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);
+    --text: #2a2a2a;
+    --muted: #7a7a72;
+    --border: #e5dfd6;
+    --shadow: 0 2px 8px rgba(47,65,86,0.04), 0 1px 2px rgba(47,65,86,0.02);
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -23,10 +23,14 @@
     background-color: var(--bg);
     color: var(--text);
     -webkit-font-smoothing: antialiased;
+    letter-spacing: 0.01em;
   }
 
   ::selection {
     background-color: var(--peach);
     color: var(--navy);
   }
+
+  /* Vintage smooth transitions */
+  a, button { transition: all 0.3s ease; }
 }
