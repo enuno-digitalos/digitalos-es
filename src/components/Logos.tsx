@@ -15,7 +15,19 @@ const logos = [
 
 export default function Logos() {
   return (
-    <section className="py-10 border-y overflow-hidden" style={{ borderColor: "var(--border)" }}>
+    <section
+      className="py-10 border-y overflow-hidden"
+      style={{ borderColor: "var(--border)" }}
+    >
+      <p
+        className="text-center text-xs uppercase tracking-widest mb-4"
+        style={{
+          fontFamily: "var(--font-work)",
+          color: "var(--muted)",
+        }}
+      >
+        He formado equipos en:
+      </p>
       <div className="logo-marquee">
         <div className="logo-track">
           {[...logos, ...logos, ...logos, ...logos].map((logo, i) => (

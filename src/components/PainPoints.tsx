@@ -1,59 +1,68 @@
+const quotes = [
+  {
+    text: "Tengo más de 60.000 emails sin leer. Cuando necesito encontrar algo, tardo 10 minutos. Y al final uso «olvidé mi contraseña» porque ni eso controlo.",
+  },
+  {
+    text: "Tengo archivos en el escritorio, en descargas, en un pendrive, en «alguna nube que no recuerdo cuál». Y versiones: documento_final, documento_final_2, documento_DEFINITIVO.",
+  },
+  {
+    text: "Sé que debería saber hacer esto. Pero cada vez que intento ordenarlo, me bloqueo. He tirado la toalla tantas veces que ya no creo que pueda cambiar.",
+  },
+  {
+    text: "Mientras yo busco ese archivo que «mandé la semana pasada», otros resuelven en segundos lo que a mí me lleva media mañana.",
+  },
+];
+
 export default function PainPoints() {
   return (
-    <section className="py-20 px-6" style={{ backgroundColor: "var(--bg)" }}>
+    <section className="py-20 md:py-28 px-6" style={{ backgroundColor: "var(--bg-alt)" }}>
       <div className="max-w-3xl mx-auto">
         <h2
-          className="text-3xl md:text-[2.8rem] leading-tight mb-6"
+          className="text-3xl md:text-[2.8rem] leading-tight mb-12"
           style={{ fontFamily: "var(--font-libre)", color: "var(--navy)" }}
         >
           ¿Te suena?
         </h2>
 
-        <div
-          className="rounded-2xl p-8 md:p-10 mb-8"
-          style={{ backgroundColor: "var(--card)", boxShadow: "var(--shadow)" }}
-        >
-          <div className="space-y-6" style={{ fontFamily: "var(--font-work)", color: "var(--text)" }}>
-            <div className="flex gap-4 items-start">
-              <span className="text-2xl shrink-0" style={{ color: "var(--orange)" }}>&ldquo;</span>
-              <p className="text-base leading-relaxed italic" style={{ color: "var(--muted)" }}>
-                Estoy hasta arriba de trabajo, pero al final del día siento que sigo igual:
-                saltando entre tareas, sin acabar ninguna importante.
+        <div className="space-y-5 mb-14">
+          {quotes.map((q, i) => (
+            <div
+              key={i}
+              className="rounded-xl p-6 md:p-8"
+              style={{
+                backgroundColor: "var(--card)",
+                borderLeft: "4px solid var(--orange)",
+                boxShadow: "0 1px 4px rgba(0,0,0,0.04)",
+              }}
+            >
+              <p
+                className="text-base md:text-[1.05rem] leading-relaxed italic"
+                style={{
+                  fontFamily: "var(--font-libre), 'Libre Baskerville', serif",
+                  color: "var(--text)",
+                }}
+              >
+                &ldquo;{q.text}&rdquo;
               </p>
             </div>
-
-            <div className="border-t" style={{ borderColor: "var(--border)" }} />
-
-            <div className="flex gap-4 items-start">
-              <span className="text-2xl shrink-0" style={{ color: "var(--orange)" }}>&ldquo;</span>
-              <p className="text-base leading-relaxed italic" style={{ color: "var(--muted)" }}>
-                Tengo notas en Notion, mil grupos de WhatsApp, recordatorios en el móvil,
-                listas en papel... pero cuando necesito algo, tardo una eternidad en encontrarlo.
-              </p>
-            </div>
-
-            <div className="border-t" style={{ borderColor: "var(--border)" }} />
-
-            <div className="flex gap-4 items-start">
-              <span className="text-2xl shrink-0" style={{ color: "var(--orange)" }}>&ldquo;</span>
-              <p className="text-base leading-relaxed italic" style={{ color: "var(--muted)" }}>
-                Empiezo cada semana con intención de organizarme mejor, pero el jueves ya
-                estoy atrapado en la misma situación.
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
 
-        <p
-          className="text-xl font-medium leading-relaxed"
-          style={{ fontFamily: "var(--font-work)", color: "var(--navy)" }}
-        >
-          El caos digital no es falta de disciplina. <strong>Es falta de sistema.</strong>
-          <br />
-          <span style={{ color: "var(--muted)", fontWeight: 400, fontSize: "1.05rem" }}>
-            El problema no eres tú. Es el sistema que estás usando — o la ausencia de él.
-          </span>
-        </p>
+        <div className="max-w-2xl">
+          <p
+            className="text-xl md:text-2xl font-medium leading-snug mb-2"
+            style={{ fontFamily: "var(--font-work)", color: "var(--navy)" }}
+          >
+            El caos digital no es falta de disciplina.{" "}
+            <strong>Es falta de sistema.</strong>
+          </p>
+          <p
+            className="text-lg"
+            style={{ fontFamily: "var(--font-work)", color: "var(--orange)" }}
+          >
+            Y eso se arregla.
+          </p>
+        </div>
       </div>
     </section>
   );

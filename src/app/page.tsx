@@ -3,11 +3,10 @@ import Hero from "@/components/Hero";
 import Logos from "@/components/Logos";
 import PainPoints from "@/components/PainPoints";
 import Transformation from "@/components/Transformation";
+import SobreMi from "@/components/SobreMi";
 import Programa from "@/components/Programa";
-import Testimonios from "@/components/Testimonios";
 import Oferta from "@/components/Oferta";
 import FAQ from "@/components/FAQ";
-import SobreMi from "@/components/SobreMi";
 import GoogleReviews from "@/components/GoogleReviews";
 import Newsletter from "@/components/Newsletter";
 import CTAFinal from "@/components/CTAFinal";
@@ -25,10 +24,9 @@ export default function Home() {
         <Transformation />
         <SobreMi />
         <Programa />
-        <Testimonios />
+        <GoogleReviews />
         <Oferta />
         <FAQ />
-        <GoogleReviews />
         <Newsletter />
         <CTAFinal />
         <OtrosPrograms />

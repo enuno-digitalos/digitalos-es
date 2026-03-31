@@ -4,24 +4,28 @@ import { useState } from "react";
 
 const faqs = [
   {
-    q: "¿Cuánto tiempo me llevará el curso?",
-    a: "Mi recomendación: 4 semanas, una por nivel. Pero no hay carrera — aplicas desde el día uno, no devoras y olvidas. Construir tu sistema es una tarea para toda la vida ;-)",
+    q: "\u00bfNo tengo tiempo para un curso m\u00e1s, es realmente pr\u00e1ctico?",
+    a: "No es un curso que te obliga a sentarte 3 horas. Son niveles cortos que aplicas en tu d\u00eda a d\u00eda. La mayor\u00eda de personas ven resultados en la primera semana.",
   },
   {
-    q: "¿Necesito conocimientos técnicos?",
-    a: "No. Diseñado para que no tengas que complicarte la vida. Paso a paso, manuales y guías visuales incluidas.",
+    q: "Soy bastante torpe con la tecnolog\u00eda. \u00bfPodr\u00e9 seguirlo?",
+    a: "Digital OS Personal est\u00e1 dise\u00f1ado exactamente para ti. No asumimos que sabes nada. Cada paso est\u00e1 explicado como si estuvieras al lado de Raquel.",
   },
   {
-    q: "¿Hay soporte si tengo dudas?",
-    a: "Sesiones en directo cada dos meses + buzón de sugerencias. Los materiales están pensados para que el paso a paso sea suficiente.",
+    q: "He intentado ordenar mi vida digital mil veces y siempre vuelvo al caos.",
+    a: "Porque usabas herramientas sin sistema. Aqu\u00ed primero dise\u00f1as el sistema y luego colocas las herramientas. Por eso funciona de forma permanente.",
   },
   {
-    q: "¿Cuánto tiempo tendré acceso?",
-    a: "Mientras el programa esté activo. Si dejara de venderse, recibirías los materiales descargables para quedártelos.",
+    q: "\u00bfY si es demasiado tarde para m\u00ed? Mi desorden es enorme.",
+    a: "Hemos acompa\u00f1ado a personas con m\u00e1s de 120.000 emails sin leer. No importa el punto de partida. El sistema funciona porque es progresivo.",
   },
   {
-    q: "¿Qué pasa si no es para mí?",
-    a: "Te devuelvo el dinero. Solo pido que me expliques el porqué para poder mejorar.",
+    q: "\u00bfQu\u00e9 pasa si no me convence?",
+    a: "Tienes 14 d\u00edas para probarlo. Si no te convence, te devolvemos el 100% sin preguntas.",
+  },
+  {
+    q: "\u00bfCu\u00e1nto tiempo necesito dedicarle a la semana?",
+    a: "Entre 2 y 3 horas semanales para avanzar c\u00f3modamente. Puedes ir m\u00e1s r\u00e1pido o m\u00e1s lento, el acceso es ilimitado.",
   },
 ];
 
@@ -29,43 +33,47 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="py-20 px-6" style={{ backgroundColor: "var(--card)" }}>
+    <section id="faq" className="py-20 px-6" style={{ backgroundColor: "var(--bg)" }}>
       <div className="max-w-2xl mx-auto">
         <h2
           className="text-3xl md:text-4xl mb-12"
-          style={{ fontFamily: "var(--font-libre), 'Libre Baskerville', serif", color: "var(--navy)" }}
+          style={{ fontFamily: "var(--font-libre)", color: "var(--navy)" }}
         >
           Preguntas frecuentes
         </h2>
 
-        <div className="space-y-0 divide-y" style={{ borderColor: "var(--border)" }}>
+        <div className="space-y-3">
           {faqs.map((faq, i) => (
-            <div key={i} style={{ borderColor: "var(--border)" }}>
+            <div
+              key={i}
+              className="rounded-2xl overflow-hidden transition"
+              style={{
+                backgroundColor: "var(--card)",
+                boxShadow: "var(--shadow)",
+              }}
+            >
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                className="w-full text-left py-5 flex items-center justify-between"
+                className="w-full text-left px-6 py-5 flex items-center justify-between gap-4"
               >
                 <span
                   className="font-medium text-sm"
-                  style={{ fontFamily: "var(--font-work), 'Work Sans', sans-serif", color: "var(--text)" }}
+                  style={{ fontFamily: "var(--font-work)", color: "var(--text)" }}
                 >
                   {faq.q}
                 </span>
-                <svg
-                  className={`w-5 h-5 shrink-0 ml-4 transition-transform ${openIndex === i ? "rotate-180" : ""}`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+                <span
+                  className="shrink-0 text-xl leading-none select-none"
                   style={{ color: "var(--muted)" }}
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
+                  {openIndex === i ? "\u2212" : "+"}
+                </span>
               </button>
               {openIndex === i && (
-                <div className="pb-5">
+                <div className="px-6 pb-5">
                   <p
                     className="text-sm leading-relaxed"
-                    style={{ fontFamily: "var(--font-work), 'Work Sans', sans-serif", color: "var(--muted)" }}
+                    style={{ fontFamily: "var(--font-work)", color: "var(--muted)" }}
                   >
                     {faq.a}
                   </p>
