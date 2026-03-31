@@ -15,22 +15,23 @@ interface ReviewsData {
   reviews: Review[];
 }
 
-const FALLBACK: ReviewsData = {
-  rating: 5.0,
-  total: 142,
-  reviews: [
-    { author_name: "Celia Arévalo Voss", rating: 5, text: "Estoy aprendiendo muchísimo de Raquel, me ha enseñado a usar CHAT GPT entre otras aplicaciones y ahora lo uso profesionalmente como un asistente genial. Es una maestra estupenda, maestra de vida y de IA, entre otras muchas cosas. La recomiendo 100%", time: "Mar 17, 2026" },
-    { author_name: "Mercedes García Santamarina", rating: 5, text: "Otra vez lo ha conseguido. Material 100% aplicable. Muy recomendable.", time: "Mar 12, 2026" },
-    { author_name: "Cecilia Almiron", rating: 5, text: "Raquel gracias por tu excelente explicación !!!", time: "Mar 12, 2026" },
-    { author_name: "Diego Repetto", rating: 5, text: "Participe en la charla Claude de Cero, y realmente mucho aprendizaje, y lo que mas valoro es la entrega de Raquel para respodner todas las preguntas de todos, no dejo a nadie sin responder. Una charla de 90 minutos, se extendio casi 3 horas, increible ese aporte valiossimo, Seguire participando en sus talleres", time: "Mar 12, 2026" },
-    { author_name: "Pablo Leal", rating: 5, text: "Increíble, super útil, muchas gracias Raquel, RECOMENDADO. Muy interesante y sobre todo útil. Eres fantástica. Muchas gracias por dar claridad", time: "Mar 12, 2026" },
-    { author_name: "Nidia Moros Carvallo", rating: 5, text: "Si hoy entiendo, uso y aprovecho la IA es gracias a Raquel. Gracias infinitas y detrás de sus clases, siempre", time: "Mar 12, 2026" },
-    { author_name: "Carmen Alonso", rating: 5, text: "Raquel consigue que alguien que parta de cero en conocimiento digital, en primer lugar pierda el medio y después se lance a ello observando todo lo bueno que se puede sacar de este conocimiento al ponerlo en práctica. Es una excelente facilitadora. Muchas gracias por todo lo que das.", time: "Mar 12, 2026" },
-    { author_name: "Lucia Herráez", rating: 5, text: "La energía de Raquel Vázquez es contagiosa. Es practica, directa, va al grano a lo que importa. Ella nos da atajos, nos abra puertas, nos invita a transitar entre ellas. Nos pone la cabeza como un bombo, pero tendremos una cabeza mejor estructurada. Mi relación con AI cambio mucho después de su charla, y ahora con el Brain Box. Quiero aprender Notion con ella. No imagino otra persona mejor que ella para aprender. Raquel me encanta!", time: "Mar 12, 2026" },
-  ],
-};
+const FALLBACK_REVIEWS: Review[] = [
+  { author_name: "Celia Arévalo Voss", rating: 5, text: "Estoy aprendiendo muchísimo de Raquel, me ha enseñado a usar CHAT GPT entre otras aplicaciones y ahora lo uso profesionalmente como un asistente genial. Es una maestra estupenda, maestra de vida y de IA, entre otras muchas cosas. La recomiendo 100%", time: "Mar 17, 2026" },
+  { author_name: "Mercedes García Santamarina", rating: 5, text: "Otra vez lo ha conseguido. Material 100% aplicable. Muy recomendable.", time: "Mar 12, 2026" },
+  { author_name: "Cecilia Almiron", rating: 5, text: "Raquel gracias por tu excelente explicación !!!", time: "Mar 12, 2026" },
+  { author_name: "Diego Repetto", rating: 5, text: "Participe en la charla Claude de Cero, y realmente mucho aprendizaje, y lo que mas valoro es la entrega de Raquel para respodner todas las preguntas de todos, no dejo a nadie sin responder. Una charla de 90 minutos, se extendio casi 3 horas, increible ese aporte valiossimo, Seguire participando en sus talleres", time: "Mar 12, 2026" },
+  { author_name: "Pablo Leal", rating: 5, text: "Increíble, super útil, muchas gracias Raquel, RECOMENDADO. Muy interesante y sobre todo útil. Eres fantástica. Muchas gracias por dar claridad", time: "Mar 12, 2026" },
+  { author_name: "Nidia Moros Carvallo", rating: 5, text: "Si hoy entiendo, uso y aprovecho la IA es gracias a Raquel. Gracias infinitas y detrás de sus clases, siempre", time: "Mar 12, 2026" },
+  { author_name: "Carmen Alonso", rating: 5, text: "Raquel consigue que alguien que parta de cero en conocimiento digital, en primer lugar pierda el medio y después se lance a ello observando todo lo bueno que se puede sacar de este conocimiento al ponerlo en práctica. Es una excelente facilitadora. Muchas gracias por todo lo que das.", time: "Mar 12, 2026" },
+  { author_name: "Lucia Herráez", rating: 5, text: "La energía de Raquel Vázquez es contagiosa. Es practica, directa, va al grano a lo que importa. Ella nos da atajos, nos abra puertas, nos invita a transitar entre ellas. Nos pone la cabeza como un bombo, pero tendremos una cabeza mejor estructurada. Mi relación con AI cambio mucho después de su charla, y ahora con el Brain Box. Quiero aprender Notion con ella. No imagino otra persona mejor que ella para aprender. Raquel me encanta!", time: "Mar 12, 2026" },
+  { author_name: "Carles Fernández", rating: 5, text: "Me encanta su alegría y pasión, pero sobretodo su enorme practicidad. Siguiendo sus recomendaciones ganas muchísimo tiempo en infinidad de tareas. ¡Muy recomendable!", time: "Feb 2026" },
+  { author_name: "Cinzia Puopolo", rating: 5, text: "Conocer a Raquel ha sido como encontrar un faro en medio del océano. Me ayuda a ganar claridad, organización y foco de forma fácil y efectiva.", time: "Feb 2026" },
+  { author_name: "Lena", rating: 5, text: "La capacidad de soluciones que ofrece es tal, que crees que tu vida ha pasado a tener 30 horas. Con ella la eficiencia se vuelve una realidad.", time: "Ene 2026" },
+  { author_name: "Miryam Soto", rating: 5, text: "No conozco mejor profesional para aprender la tecnología que todos los emprendedores deberíamos saber. Raquel es conocimiento, pasión y generosidad a borbotones.", time: "Ene 2026" },
+];
 
-const VISIBLE_INITIAL = 6;
+const VISIBLE_STEP = 3;
+
 const TRUNCATE_LENGTH = 150;
 
 function GoldStar() {
@@ -87,7 +88,6 @@ function ReviewCard({ review }: { review: Review }) {
         borderLeft: "3px solid #ffbf23",
       }}
     >
-      {/* Header: score + stars + date */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <span className="text-sm font-bold" style={{ color: "#ffbc00" }}>
@@ -100,7 +100,6 @@ function ReviewCard({ review }: { review: Review }) {
         </span>
       </div>
 
-      {/* Review text */}
       <p className="text-sm leading-relaxed" style={{ color: "#f0f0f0" }}>
         {displayText}
         {needsTruncate && (
@@ -117,7 +116,6 @@ function ReviewCard({ review }: { review: Review }) {
         )}
       </p>
 
-      {/* Footer: avatar + name + Google icon */}
       <div className="flex items-center gap-2 mt-auto">
         <span
           className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold shrink-0"
@@ -137,21 +135,31 @@ function ReviewCard({ review }: { review: Review }) {
 }
 
 export default function GoogleReviews() {
-  const [data, setData] = useState<ReviewsData | null>(null);
-  const [visibleCount, setVisibleCount] = useState(VISIBLE_INITIAL);
+  const [allReviews, setAllReviews] = useState<Review[]>(FALLBACK_REVIEWS);
+  const [rating, setRating] = useState(5.0);
+  const [total, setTotal] = useState(142);
+  const [visibleCount, setVisibleCount] = useState(VISIBLE_STEP);
 
   useEffect(() => {
     fetch("/api/reviews")
       .then((res) => res.json())
-      .then((d) => {
-        if (d.reviews && d.reviews.length > 0) setData(d);
+      .then((d: ReviewsData) => {
+        if (d.rating) setRating(d.rating);
+        if (d.total) setTotal(d.total);
+        if (d.reviews && d.reviews.length > 0) {
+          // Merge API reviews (newest) with fallback, dedup by name
+          const apiNames = new Set(d.reviews.map((r: Review) => r.author_name));
+          const uniqueFallback = FALLBACK_REVIEWS.filter(
+            (r) => !apiNames.has(r.author_name)
+          );
+          setAllReviews([...d.reviews, ...uniqueFallback]);
+        }
       })
       .catch(() => {});
   }, []);
 
-  const reviews = data || FALLBACK;
-  const visibleReviews = reviews.reviews.slice(0, visibleCount);
-  const hasMore = visibleCount < reviews.reviews.length;
+  const visibleReviews = allReviews.slice(0, visibleCount);
+  const hasMore = visibleCount < allReviews.length;
 
   return (
     <section
@@ -160,36 +168,27 @@ export default function GoogleReviews() {
       style={{ backgroundColor: "var(--navy)" }}
     >
       <div className="max-w-5xl mx-auto">
-        {/* Header: rating + stars + count */}
         <div className="flex items-center justify-center gap-4 mb-10">
-          <span
-            className="text-5xl font-bold"
-            style={{ color: "#f0f0f0" }}
-          >
-            {reviews.rating.toFixed(2)}
+          <span className="text-5xl font-bold" style={{ color: "#f0f0f0" }}>
+            {rating.toFixed(2)}
           </span>
           <Stars />
-          <div
-            className="w-px h-6"
-            style={{ backgroundColor: "#bdbdbd" }}
-          />
+          <div className="w-px h-6" style={{ backgroundColor: "#bdbdbd" }} />
           <span className="text-sm" style={{ color: "#bdbdbd" }}>
-            {reviews.total} reviews
+            {total} reviews
           </span>
         </div>
 
-        {/* Reviews grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {visibleReviews.map((r, i) => (
             <ReviewCard key={i} review={r} />
           ))}
         </div>
 
-        {/* Load More */}
         {hasMore && (
           <div className="text-center mt-8">
             <button
-              onClick={() => setVisibleCount((c) => c + 6)}
+              onClick={() => setVisibleCount((c) => c + VISIBLE_STEP)}
               className="text-sm font-semibold cursor-pointer hover:underline"
               style={{ color: "#f0f0f0" }}
             >
