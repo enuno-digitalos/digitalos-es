@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function SobreMi() {
   return (
     <section id="sobre-mi" className="py-20 px-6" style={{ backgroundColor: "var(--bg-alt)" }}>
@@ -37,14 +39,13 @@ export default function SobreMi() {
             </div>
           </div>
           <div className="w-full md:w-60 shrink-0">
-            <div
-              className="w-full aspect-[3/4] rounded-2xl flex items-center justify-center"
-              style={{ backgroundColor: "rgba(255,255,255,0.08)" }}
-            >
-              <span className="text-xs text-white/30" style={{ fontFamily: "var(--font-work)" }}>
-                [Foto de Raquel]
-              </span>
-            </div>
+            <Image
+              src="/BN Raquel.jpg"
+              alt="Raquel Vázquez"
+              width={240}
+              height={320}
+              className="w-full aspect-[3/4] rounded-2xl object-cover object-top"
+            />
           </div>
         </div>
       </div>
