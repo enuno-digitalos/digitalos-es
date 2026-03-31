@@ -40,7 +40,7 @@ export default function SobreMi() {
           </div>
           <div className="w-full md:w-60 shrink-0">
             <Image
-              src="/BN Raquel.jpg"
+              src="/raquel-bn.jpg"
               alt="Raquel Vázquez"
               width={240}
               height={320}

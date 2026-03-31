@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-4">
             <Image
-              src="/raq peke BN_2_circle2.png"
+              src="/raquel-circle.png"
               alt="Raquel Vázquez"
               width={44}
               height={44}
