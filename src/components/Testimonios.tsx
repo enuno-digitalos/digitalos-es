@@ -19,7 +19,7 @@ const testimonios = [
 
 export default function Testimonios() {
   return (
-    <section id="testimonios" className="py-20 px-6">
+    <section id="testimonios" className="py-20 px-6" style={{ backgroundColor: "var(--card)" }}>
       <div className="max-w-4xl mx-auto">
         <p
           className="text-xs font-semibold uppercase tracking-widest mb-3"
@@ -34,15 +34,16 @@ export default function Testimonios() {
           Resultados reales, gente real.
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {testimonios.map((t, i) => (
             <div
               key={i}
-              className="p-6 rounded-md border"
-              style={{ backgroundColor: "var(--card)", borderColor: "var(--border)" }}
+              className="p-7 rounded-2xl"
+              style={{ backgroundColor: "var(--bg)", border: "1px solid var(--border)" }}
             >
+              <div className="text-sm mb-4" style={{ color: "var(--orange)" }}>★★★★★</div>
               <p
-                className="text-sm leading-relaxed mb-4 italic"
+                className="text-base leading-relaxed mb-5 italic"
                 style={{ fontFamily: "var(--font-libre), 'Libre Baskerville', serif", color: "var(--text)" }}
               >
                 &ldquo;{t.text}&rdquo;
@@ -51,7 +52,7 @@ export default function Testimonios() {
                 className="text-sm font-semibold"
                 style={{ fontFamily: "var(--font-work), 'Work Sans', sans-serif", color: "var(--navy)" }}
               >
-                — {t.name}
+                {t.name}
               </p>
             </div>
           ))}

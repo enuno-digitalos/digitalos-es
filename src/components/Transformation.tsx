@@ -9,7 +9,7 @@ const rows = [
 
 export default function Transformation() {
   return (
-    <section className="py-20 px-6">
+    <section className="py-20 px-6" style={{ backgroundColor: "var(--card)" }}>
       <div className="max-w-4xl mx-auto">
         <h2
           className="text-3xl md:text-4xl mb-12 text-center"
@@ -18,24 +18,30 @@ export default function Transformation() {
           Lo que cambia con Digital OS Personal
         </h2>
 
-        <div className="rounded-md border overflow-hidden" style={{ borderColor: "var(--border)" }}>
-          <div className="grid grid-cols-2 text-xs font-semibold uppercase tracking-widest" style={{ fontFamily: "var(--font-work), 'Work Sans', sans-serif" }}>
-            <div className="p-4" style={{ backgroundColor: "var(--bg)", color: "var(--muted)" }}>Ahora mismo</div>
-            <div className="p-4" style={{ backgroundColor: "var(--navy)", color: "#fff" }}>Con Digital OS Personal</div>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {rows.map((r, i) => (
-            <div key={i} className="grid grid-cols-2 border-t" style={{ borderColor: "var(--border)" }}>
+            <div key={i} className="flex gap-4 items-start">
               <div
-                className="p-4 text-sm"
-                style={{ fontFamily: "var(--font-work), 'Work Sans', sans-serif", color: "var(--muted)", backgroundColor: "var(--card)" }}
+                className="flex-1 p-5 rounded-xl"
+                style={{ backgroundColor: "var(--bg)", border: "1px solid var(--border)" }}
               >
-                {r[0]}
+                <p className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ fontFamily: "var(--font-work), 'Work Sans', sans-serif", color: "var(--muted)" }}>
+                  Antes
+                </p>
+                <p className="text-sm" style={{ fontFamily: "var(--font-work), 'Work Sans', sans-serif", color: "var(--muted)" }}>
+                  {r[0]}
+                </p>
               </div>
               <div
-                className="p-4 text-sm font-medium"
-                style={{ fontFamily: "var(--font-work), 'Work Sans', sans-serif", color: "var(--navy)", backgroundColor: "var(--card)" }}
+                className="flex-1 p-5 rounded-xl"
+                style={{ backgroundColor: "var(--orange-light, #fff3eb)", border: "1px solid var(--orange)" }}
               >
-                {r[1]}
+                <p className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ fontFamily: "var(--font-work), 'Work Sans', sans-serif", color: "var(--orange)" }}>
+                  Después
+                </p>
+                <p className="text-sm font-medium" style={{ fontFamily: "var(--font-work), 'Work Sans', sans-serif", color: "var(--navy)" }}>
+                  {r[1]}
+                </p>
               </div>
             </div>
           ))}
