@@ -39,7 +39,7 @@ function GoldStar() {
     <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4">
       <path
         d="M3.686 15.004c-.215 0-.425-.066-.6-.19-.34-.24-.49-.667-.383-1.068l1.164-4.243L.38 6.74c-.33-.255-.46-.69-.33-1.084.132-.396.495-.67.913-.69l4.485-.227 1.6-4.1C7.206.252 7.58 0 8 0c.417 0 .792.253.948.64l1.607 4.1 4.484.227c.417.02.78.293.914.69.13.394 0 .827-.328 1.084L12.14 9.5l1.165 4.242c.108.4-.045.827-.384 1.067-.34.242-.795.254-1.15.03l-3.766-2.4-3.766 2.4c-.164.106-.356.163-.552.164z"
-        fill="#ffbc00"
+        fill="#FF6A00"
         fillRule="evenodd"
       />
     </svg>
@@ -85,12 +85,12 @@ function ReviewCard({ review }: { review: Review }) {
       className="rounded-lg p-5 flex flex-col gap-3"
       style={{
         backgroundColor: "var(--navy)",
-        borderLeft: "3px solid #ffbf23",
+        borderLeft: "3px solid #FF6A00",
       }}
     >
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <span className="text-sm font-bold" style={{ color: "#ffbc00" }}>
+          <span className="text-sm font-bold" style={{ color: "#FF6A00" }}>
             {review.rating}
           </span>
           <Stars />
@@ -100,7 +100,7 @@ function ReviewCard({ review }: { review: Review }) {
         </span>
       </div>
 
-      <p className="text-sm leading-relaxed" style={{ color: "#f0f0f0" }}>
+      <p className="text-sm leading-relaxed" style={{ fontFamily: "var(--font-work)", color: "#f0f0f0" }}>
         {displayText}
         {needsTruncate && (
           <>
@@ -108,7 +108,7 @@ function ReviewCard({ review }: { review: Review }) {
             <button
               onClick={() => setExpanded(!expanded)}
               className="font-semibold hover:underline cursor-pointer"
-              style={{ color: "#ffbc00" }}
+              style={{ color: "#FF6A00" }}
             >
               {expanded ? "Less" : "More"}
             </button>
@@ -123,7 +123,7 @@ function ReviewCard({ review }: { review: Review }) {
         >
           {initials}
         </span>
-        <span className="text-xs truncate" style={{ color: "#bdbdbd" }}>
+        <span className="text-xs truncate" style={{ fontFamily: "var(--font-work)", color: "#bdbdbd" }}>
           {review.author_name}
         </span>
         <span className="ml-auto shrink-0">
@@ -169,12 +169,18 @@ export default function GoogleReviews() {
     >
       <div className="max-w-5xl mx-auto">
         <div className="flex items-center justify-center gap-4 mb-10">
-          <span className="text-5xl font-bold" style={{ color: "#f0f0f0" }}>
+          <span
+            className="text-5xl font-bold"
+            style={{ fontFamily: "var(--font-work)", color: "#f0f0f0" }}
+          >
             {rating.toFixed(2)}
           </span>
           <Stars />
           <div className="w-px h-6" style={{ backgroundColor: "#bdbdbd" }} />
-          <span className="text-sm" style={{ color: "#bdbdbd" }}>
+          <span
+            className="text-sm"
+            style={{ fontFamily: "var(--font-work)", color: "#bdbdbd" }}
+          >
             {total} reviews
           </span>
         </div>
