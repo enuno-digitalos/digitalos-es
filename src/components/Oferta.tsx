@@ -1,59 +1,92 @@
+const incluye = [
+  "4 niveles completos de organización digital",
+  "Guías y manuales adicionales (archivos, contraseñas, copias de seguridad…)",
+  "Sesiones en directo cada dos meses para dudas",
+  "Buzón de sugerencias permanente",
+  "Actualizaciones frecuentes incluidas",
+  "Acceso mientras el programa esté activo (materiales descargables si dejara de estarlo)",
+];
+
+const bonus = [
+  { text: "Masterclass ChatGPT grabada — cómo usar ChatGPT de forma práctica desde cero", valor: null },
+  { text: "Masterclass Notion desde Cero", valor: "97€" },
+  { text: "Masterclass ecosistema Claude — segunda parte en directo próximamente", valor: null },
+  { text: "Primer año del Club de Enfocados incluido", valor: "97€/año" },
+];
+
 export default function Oferta() {
-  const beneficios = [
-    "Si lo aplicas, saldrás con el sistema funcionando",
-    "Solo información práctica y simple, para la vida real. Lo que necesitas, sin perderte en métodos innecesarios",
-    "Sesiones periódicas en directo para dudas y consultas",
-    "Incluye asistentes IA para optimizar tu carga de trabajo",
-  ];
-
   return (
-    <section className="py-20 px-6 bg-[var(--navy)] text-white">
-      <div className="max-w-2xl mx-auto text-center">
-        <p className="text-[var(--orange)] text-sm uppercase tracking-wider mb-2" style={{ fontFamily: "'Work Sans', sans-serif" }}>
-          De qué estoy hablando exactamente
+    <section className="py-20 px-6" style={{ backgroundColor: "var(--navy)" }}>
+      <div className="max-w-3xl mx-auto">
+        <p
+          className="text-xs font-semibold uppercase tracking-widest mb-3"
+          style={{ fontFamily: "var(--font-work), 'Work Sans', sans-serif", color: "var(--orange)", letterSpacing: "2.5px" }}
+        >
+          Tu inversión
         </p>
-        <h2 className="text-2xl md:text-3xl font-bold uppercase mb-4" style={{ fontFamily: "'Work Sans', sans-serif" }}>
-          Productividad Digital → Del caos al clic
+        <h2
+          className="text-3xl md:text-4xl mb-12 text-white"
+          style={{ fontFamily: "var(--font-libre), 'Libre Baskerville', serif" }}
+        >
+          Todo lo que incluye
         </h2>
-        <p className="text-white/80 mb-4" style={{ fontFamily: "'Work Sans', sans-serif" }}>
-          Si quieres una vida más fácil y sencilla, aquí tienes el sistema para conseguirla
-        </p>
-        <p className="font-bold mb-2" style={{ fontFamily: "'Work Sans', sans-serif" }}>
-          4 niveles para cambiar tu vida y organización digital
-        </p>
-        <p className="text-white/70 mb-8" style={{ fontFamily: "'Work Sans', sans-serif" }}>
-          Pasarás de vivir apagando fuegos a trabajar con claridad, más calma y con tiempo de calidad para lo que te importa
-        </p>
 
-        <div className="bg-white/10 rounded-md p-8 md:p-10 text-left mb-8">
-          <p className="text-[var(--orange)] text-sm mb-2">★★★★★</p>
-          <h3 className="text-xl font-bold mb-6" style={{ fontFamily: "'Work Sans', sans-serif" }}>
-            Qué obtienes a cambio
-          </h3>
-          <ul className="space-y-3">
-            {beneficios.map((b, i) => (
-              <li key={i} className="flex items-start gap-3 text-white/90" style={{ fontFamily: "'Work Sans', sans-serif" }}>
-                <span className="text-green-400 mt-0.5 shrink-0">✓</span>
-                {b}
-              </li>
+        <div className="space-y-3 mb-10">
+          {incluye.map((item, i) => (
+            <div key={i} className="flex items-start gap-3">
+              <span className="text-green-400 mt-0.5 shrink-0">✓</span>
+              <span
+                className="text-sm text-white/85"
+                style={{ fontFamily: "var(--font-work), 'Work Sans', sans-serif" }}
+              >
+                {item}
+              </span>
+            </div>
+          ))}
+        </div>
+
+        <div className="rounded-md p-6 mb-10" style={{ backgroundColor: "rgba(255,255,255,0.08)" }}>
+          <p className="text-sm font-semibold text-white mb-4" style={{ fontFamily: "var(--font-work), 'Work Sans', sans-serif" }}>
+            Bonus incluidos:
+          </p>
+          <div className="space-y-3">
+            {bonus.map((b, i) => (
+              <div key={i} className="flex items-start gap-3">
+                <span style={{ color: "var(--orange)" }} className="shrink-0">🎁</span>
+                <span className="text-sm text-white/85" style={{ fontFamily: "var(--font-work), 'Work Sans', sans-serif" }}>
+                  {b.text}
+                  {b.valor && <span className="text-white/50 ml-1">({b.valor})</span>}
+                </span>
+              </div>
             ))}
-          </ul>
-
-          <div className="text-center mt-10">
-            <p className="text-4xl font-bold mb-2" style={{ fontFamily: "'Work Sans', sans-serif" }}>
-              397€ <span className="text-lg font-normal text-white/70">+ IVA</span>
-            </p>
-            <p className="text-white/60 text-sm mb-6" style={{ fontFamily: "'Work Sans', sans-serif" }}>
-              Se irá desbloqueando el contenido poco a poco y habrá actualizaciones frecuentes
-            </p>
-            <a
-              href="#empezar"
-              className="inline-block bg-[var(--orange)] text-white font-semibold px-8 py-4 rounded-md hover:opacity-90 transition text-sm uppercase tracking-wider"
-              style={{ fontFamily: "'Work Sans', sans-serif" }}
-            >
-              ¡Quiero vivir mejor!
-            </a>
           </div>
+          <p className="text-sm mt-4" style={{ fontFamily: "var(--font-work), 'Work Sans', sans-serif", color: "var(--orange)" }}>
+            Valor total en bonuses: más de 340€
+          </p>
+        </div>
+
+        <div className="text-center">
+          <p
+            className="text-5xl font-bold text-white mb-2"
+            style={{ fontFamily: "var(--font-work), 'Work Sans', sans-serif" }}
+          >
+            397€ <span className="text-lg font-normal text-white/50">+ IVA</span>
+          </p>
+          <p className="text-sm text-white/60 mb-8" style={{ fontFamily: "var(--font-work), 'Work Sans', sans-serif" }}>
+            Pago único. Sin suscripción. Acceso inmediato al contenido.
+          </p>
+          <a
+            href="https://enuno.quadernoapp.com/checkout/session/3453a4b04426bf11672b37a06cddf8f2fcb7b933/init"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center font-semibold px-10 py-4 rounded-full transition hover:opacity-90 text-base"
+            style={{ fontFamily: "var(--font-work), 'Work Sans', sans-serif", backgroundColor: "var(--orange)", color: "#fff" }}
+          >
+            QUIERO PONER ORDEN
+          </a>
+          <p className="text-xs text-white/40 mt-4" style={{ fontFamily: "var(--font-work), 'Work Sans', sans-serif" }}>
+            Garantía de devolución: si no es para ti y me explicas el porqué, te devuelvo el dinero. Sin más. Quiero dinero feliz.
+          </p>
         </div>
       </div>
     </section>

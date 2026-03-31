@@ -5,7 +5,7 @@ import "./globals.css";
 const workSans = Work_Sans({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-work-sans",
+  variable: "--font-work",
   display: "swap",
 });
 
@@ -13,18 +13,17 @@ const libreBaskerville = Libre_Baskerville({
   subsets: ["latin"],
   weight: ["400"],
   style: ["normal", "italic"],
-  variable: "--font-libre-baskerville",
+  variable: "--font-libre",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Digital OS Personal — Del caos al clic | Raquel Vázquez",
+  title: "Digital OS — Tu sistema operativo digital | Raquel Vázquez",
   description:
-    "Productividad digital para emprendedores y creadores de contenido. Suelta el 'no me da la vida' y empieza a controlar tu vida digital.",
+    "Diseño ecosistemas digitales para profesionales que necesitan recuperar foco, tiempo y control. Sin humo, sin hype. Gente real en un mundo de IA.",
   openGraph: {
-    title: "Digital OS Personal — Del caos al clic",
-    description:
-      "4 niveles para transformar tu manera de trabajar. Sin teoría, pura acción.",
+    title: "Digital OS — Tu sistema operativo digital",
+    description: "Si hay caos, la IA amplifica tu caos. Pon orden primero.",
     url: "https://digitalos.es",
     siteName: "Digital OS",
     locale: "es_ES",
@@ -34,12 +33,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="es">
-      <body className={`${workSans.variable} ${libreBaskerville.variable} font-sans`}>
+      <body className={`${workSans.variable} ${libreBaskerville.variable}`}>
         {children}
       </body>
     </html>

@@ -1,42 +1,41 @@
 export default function Hero() {
   return (
-    <section className="pt-28 pb-20 px-6">
-      <div className="max-w-3xl mx-auto text-center">
-        <p
-          className="text-[10px] uppercase tracking-[2.5px] text-[var(--muted)] mb-4"
-          style={{ fontFamily: "'Work Sans', sans-serif" }}
-        >
-          Digital OS Personal
-        </p>
-        <p
-          className="text-[var(--orange)] text-lg font-medium mb-4"
-          style={{ fontFamily: "'Work Sans', sans-serif" }}
-        >
-          Del caos al clic
-        </p>
+    <section className="pt-28 pb-16 md:pt-36 md:pb-24 px-6">
+      <div className="max-w-3xl mx-auto">
         <h1
-          className="text-3xl md:text-5xl leading-tight mb-6"
-          style={{ fontFamily: "'Libre Baskerville', serif" }}
+          className="text-4xl md:text-6xl leading-tight mb-6"
+          style={{ fontFamily: "var(--font-libre), 'Libre Baskerville', serif", color: "var(--navy)" }}
         >
-          Suelta el &ldquo;no me da la vida&rdquo;
-          <br />
-          <span className="text-[var(--navy)]">y empieza a controlar tu vida digital</span>
+          Para de apagar fuegos.{" "}
+          <span style={{ color: "var(--orange)" }}>Construye el sistema</span> que te
+          devuelve el control.
         </h1>
         <p
-          className="text-[var(--muted)] text-lg mb-10 max-w-xl mx-auto"
-          style={{ fontFamily: "'Work Sans', sans-serif" }}
+          className="text-lg md:text-xl leading-relaxed mb-10 max-w-2xl"
+          style={{ fontFamily: "var(--font-work), 'Work Sans', sans-serif", color: "var(--muted)" }}
         >
-          Miles de emails, archivos por todas partes, contraseñas que no recuerdas.
-          Y la sensación de que esto ya se te ha ido de las manos.
+          Diseño ecosistemas digitales para profesionales que necesitan recuperar
+          foco, tiempo y control. Sin humo, sin hype. Gente real en un mundo de IA.
         </p>
-        <a
-          href="#empezar"
-          id="empezar"
-          className="inline-block bg-[var(--navy)] text-white font-semibold px-8 py-4 rounded-md hover:opacity-90 transition text-sm uppercase tracking-wider"
-          style={{ fontFamily: "'Work Sans', sans-serif" }}
-        >
-          Quiero poner orden
-        </a>
+        <div className="flex flex-col sm:flex-row gap-4">
+          <a
+            href="#personal"
+            className="inline-flex items-center justify-center font-semibold px-8 py-4 rounded-full text-white transition hover:opacity-90 text-sm"
+            style={{ fontFamily: "var(--font-work), 'Work Sans', sans-serif", backgroundColor: "var(--navy)" }}
+          >
+            Quiero poner orden
+            <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+          <a
+            href="#newsletter"
+            className="inline-flex items-center justify-center font-semibold px-8 py-4 rounded-full transition hover:opacity-80 text-sm border"
+            style={{ fontFamily: "var(--font-work), 'Work Sans', sans-serif", borderColor: "var(--border)", color: "var(--navy)" }}
+          >
+            Suscríbete a la newsletter
+          </a>
+        </div>
       </div>
     </section>
   );
