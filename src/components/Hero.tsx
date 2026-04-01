@@ -64,7 +64,7 @@ export default function Hero() {
             className="text-sm"
             style={{ fontFamily: "var(--font-work)", color: "var(--muted)" }}
           >
-            Más de 6.000 personas ya han dado el paso
+            Más de 2.000 personas ya han empezado a poner orden
           </p>
         </div>
 
