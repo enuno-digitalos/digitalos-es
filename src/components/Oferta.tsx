@@ -1,12 +1,11 @@
 const CTA_URL = "https://raquel-vazquez.quaderno.io/checkout/personal-os-2";
 
 const incluye = [
-  "4 niveles completos de formación",
+  "4 niveles: tu mapa y hoja de ruta completos",
   "Guías descargables y plantillas listas para usar",
-  "Sesiones en directo de preguntas y respuestas",
-  "Buzón de sugerencias: pide lo que necesitas",
+  "1 año en el Club de Enfocados (sesiones de trabajo + Q&A)",
   "Actualizaciones de por vida",
-  "Acceso desde el primer minuto",
+  "Acceso inmediato, avanza a tu ritmo",
 ];
 
 const bonus = [
@@ -96,7 +95,7 @@ export default function Oferta() {
             className="text-sm mt-6 max-w-md mx-auto leading-relaxed"
             style={{ fontFamily: "var(--font-work)", color: "var(--muted)" }}
           >
-            Garantía de devolución de 14 días. Sin preguntas.
+            14 días de garantía. Devolución del 100%, sin preguntas.
           </p>
         </div>
 

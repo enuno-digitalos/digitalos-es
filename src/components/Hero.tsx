@@ -32,9 +32,9 @@ export default function Hero() {
           className="text-lg md:text-xl leading-relaxed mb-12 max-w-2xl mx-auto"
           style={{ fontFamily: "var(--font-work)", color: "var(--muted)" }}
         >
-          Si hay caos, la IA amplifica tu caos. Si hay sistema, la IA lo potencia.
-          No necesitas ser &laquo;buen@ con la tecnología&raquo;.
-          Necesitas poner orden primero. Digital OS Personal es ese orden.
+          Si hay caos, la IA amplifica tu caos. Si hay orden, la IA lo potencia.
+          Esto no es un método ni un curso más. Es un mapa y una hoja de ruta
+          para organizar tu vida digital a tu manera, con tus cosas, a tu ritmo.
         </p>
 
         {/* Social proof */}

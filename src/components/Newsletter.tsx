@@ -90,6 +90,21 @@ export default function Newsletter() {
             >
               Sin spam. Te puedes dar de baja cuando quieras.
             </p>
+            <p
+              className="text-[10px] mt-4 leading-relaxed"
+              style={{
+                color: "var(--muted)",
+                fontFamily: "var(--font-work)",
+                opacity: 0.7,
+              }}
+            >
+              Responsable: Raquel Vázquez (ENUNO). Finalidad: suscripción a la newsletter
+              y envío de información comercial. Legitimación: tu consentimiento.
+              Destinatarios: tus datos no se ceden a terceros. Pueden alojarse en la
+              plataforma de email marketing y el resto de stack tecnológico que utilizo.
+              Derechos: acceso, rectificación, supresión, oposición, portabilidad y
+              limitación enviando un email a hola@enuno.es o ante la autoridad de control.
+            </p>
           </div>
         </div>
       </div>

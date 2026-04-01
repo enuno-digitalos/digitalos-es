@@ -17,8 +17,8 @@ export default function SobreMi() {
             </h2>
             <div className="space-y-4 text-white/80" style={{ fontFamily: "var(--font-work)" }}>
               <p className="text-base leading-relaxed">
-                En los últimos años he formado a miles de emprendedores
-                en programas de otros, y acompañado a más de 2.000 en mis propias formaciones.
+                En los últimos años he formado a miles de emprendedores,
+                y acompañado a más de 2.000 en mis propias charlas y formaciones.
               </p>
               <p className="text-base leading-relaxed">
                 Demasiadas herramientas, demasiada información, muy poco sistema.
