@@ -3,14 +3,14 @@ import Image from "next/image";
 const logos = [
   { src: "/logos/ipp.png", alt: "IPP Formación", h: 40 },
   { src: "/logos/the-break.png", alt: "The Break", h: 32 },
-  { src: "/logos/eoi.jpg", alt: "EOI", h: 48 },
-  { src: "/logos/creven.png", alt: "Creven", h: 34 },
+  { src: "/logos/eoi.jpg", alt: "EOI", h: 60 },
+  { src: "/logos/creven.png", alt: "Creven", h: 44 },
   { src: "/logos/angel-maria.png", alt: "Ángel María", h: 22 },
   { src: "/logos/eurofish.png", alt: "Eurofish", h: 34 },
   { src: "/logos/incognito.png", alt: "Incógnito Content Mastery", h: 30 },
   { src: "/logos/doppamine.png", alt: "Doppamine", h: 24 },
   { src: "/logos/paloma-fernandez.png", alt: "Paloma Fernández", h: 28 },
-  { src: "/logos/founderz.webp", alt: "Founderz", h: 42 },
+  { src: "/logos/founderz.webp", alt: "Founderz", h: 52 },
 ];
 
 export default function Logos() {
