@@ -1,16 +1,16 @@
 import Image from "next/image";
 
 const logos = [
-  { src: "/logos/ipp.png", alt: "IPP Formación", h: 38 },
-  { src: "/logos/the-break.png", alt: "The Break", h: 28 },
-  { src: "/logos/eoi.jpg", alt: "EOI", h: 42 },
-  { src: "/logos/creven.png", alt: "Creven", h: 28 },
-  { src: "/logos/angel-maria.png", alt: "Ángel María", h: 18 },
-  { src: "/logos/eurofish.png", alt: "Eurofish", h: 30 },
-  { src: "/logos/incognito.png", alt: "Incógnito Content Mastery", h: 26 },
-  { src: "/logos/doppamine.png", alt: "Doppamine", h: 20 },
-  { src: "/logos/paloma-fernandez.png", alt: "Paloma Fernández", h: 24 },
-  { src: "/logos/founderz.webp", alt: "Founderz", h: 36 },
+  { src: "/logos/ipp.png", alt: "IPP Formación", h: 40 },
+  { src: "/logos/the-break.png", alt: "The Break", h: 32 },
+  { src: "/logos/eoi.jpg", alt: "EOI", h: 48 },
+  { src: "/logos/creven.png", alt: "Creven", h: 34 },
+  { src: "/logos/angel-maria.png", alt: "Ángel María", h: 22 },
+  { src: "/logos/eurofish.png", alt: "Eurofish", h: 34 },
+  { src: "/logos/incognito.png", alt: "Incógnito Content Mastery", h: 30 },
+  { src: "/logos/doppamine.png", alt: "Doppamine", h: 24 },
+  { src: "/logos/paloma-fernandez.png", alt: "Paloma Fernández", h: 28 },
+  { src: "/logos/founderz.webp", alt: "Founderz", h: 42 },
 ];
 
 export default function Logos() {
