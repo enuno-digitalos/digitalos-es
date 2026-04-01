@@ -47,6 +47,7 @@ const levels = [
       "Una revisión semanal en 15 minutos que te da claridad para toda la semana",
       "Criterios simples para ajustar tu sistema y mantenerlo al día sin volver al caos",
       "Siempre claro en qué estás, qué toca y qué no",
+      "Tu sistema preparado para que la IA trabaje para ti, no al revés",
     ],
   },
 ];
