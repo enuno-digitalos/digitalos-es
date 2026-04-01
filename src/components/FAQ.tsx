@@ -27,6 +27,10 @@ const faqs = [
     q: "¿Cuánto tiempo necesito dedicarle a la semana?",
     a: "Entre 2 y 3 horas semanales para avanzar cómodamente. Puedes ir más rápido o más lento, el acceso es ilimitado.",
   },
+  {
+    q: "¿Qué es el Club de Enfocados y qué incluye?",
+    a: "Es la comunidad donde pasas a la acción acompañado. Incluye 2 sesiones de trabajo conjunto al mes (nos conectamos y avanzamos juntos), más 1 sesión temática con Q&A cada 15 días con Raquel en directo. El primer año está incluido con Digital OS Personal.",
+  },
 ];
 
 export default function FAQ() {

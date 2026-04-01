@@ -32,9 +32,9 @@ export default function Hero() {
           className="text-lg md:text-xl leading-relaxed mb-12 max-w-2xl mx-auto"
           style={{ fontFamily: "var(--font-work)", color: "var(--muted)" }}
         >
+          Si hay caos, la IA amplifica tu caos. Si hay sistema, la IA lo potencia.
           No necesitas ser &laquo;buen@ con la tecnología&raquo;.
-          Necesitas un sistema que funcione sin que tengas que pensar.
-          Digital OS Personal es ese sistema.
+          Necesitas poner orden primero. Digital OS Personal es ese orden.
         </p>
 
         {/* Social proof */}

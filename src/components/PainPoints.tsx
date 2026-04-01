@@ -57,10 +57,16 @@ export default function PainPoints() {
             <strong>Es falta de sistema.</strong>
           </p>
           <p
-            className="text-lg"
+            className="text-base mt-2"
+            style={{ fontFamily: "var(--font-work)", color: "var(--muted)" }}
+          >
+            Y ahora que llega la IA, el caos se amplifica. Sin orden, la IA no te salva. Te acelera el desastre.
+          </p>
+          <p
+            className="text-lg mt-3"
             style={{ fontFamily: "var(--font-work)", color: "var(--orange)" }}
           >
-            Y eso se arregla.
+            Pon orden primero. El resto viene solo.
           </p>
         </div>
       </div>

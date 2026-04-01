@@ -5,9 +5,10 @@ import PainPoints from "@/components/PainPoints";
 import Transformation from "@/components/Transformation";
 import SobreMi from "@/components/SobreMi";
 import Programa from "@/components/Programa";
+import Comunidad from "@/components/Comunidad";
+import GoogleReviews from "@/components/GoogleReviews";
 import Oferta from "@/components/Oferta";
 import FAQ from "@/components/FAQ";
-import GoogleReviews from "@/components/GoogleReviews";
 import Newsletter from "@/components/Newsletter";
 import CTAFinal from "@/components/CTAFinal";
 import OtrosPrograms from "@/components/OtrosProgramas";
@@ -24,6 +25,7 @@ export default function Home() {
         <Transformation />
         <SobreMi />
         <Programa />
+        <Comunidad />
         <GoogleReviews />
         <Oferta />
         <FAQ />
