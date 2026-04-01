@@ -44,7 +44,7 @@ export default function Comunidad() {
             className="rounded-2xl p-7"
             style={{ backgroundColor: "var(--card)", boxShadow: "var(--shadow)" }}
           >
-            <span className="text-3xl block mb-4">⚡</span>
+            <img src="/illustrations/cowork.svg" alt="" aria-hidden="true" className="mb-4" style={{ width: "48px", height: "48px" }} />
             <h3
               className="text-base font-bold mb-2"
               style={{ fontFamily: "var(--font-work)", color: "var(--navy)" }}
@@ -64,7 +64,7 @@ export default function Comunidad() {
             className="rounded-2xl p-7"
             style={{ backgroundColor: "var(--card)", boxShadow: "var(--shadow)" }}
           >
-            <span className="text-3xl block mb-4">🎯</span>
+            <img src="/illustrations/qa.svg" alt="" aria-hidden="true" className="mb-4" style={{ width: "48px", height: "48px" }} />
             <h3
               className="text-base font-bold mb-2"
               style={{ fontFamily: "var(--font-work)", color: "var(--navy)" }}
@@ -84,7 +84,7 @@ export default function Comunidad() {
             className="rounded-2xl p-7"
             style={{ backgroundColor: "var(--card)", boxShadow: "var(--shadow)" }}
           >
-            <span className="text-3xl block mb-4">🤝</span>
+            <img src="/illustrations/team.svg" alt="" aria-hidden="true" className="mb-4" style={{ width: "48px", height: "48px" }} />
             <h3
               className="text-base font-bold mb-2"
               style={{ fontFamily: "var(--font-work)", color: "var(--navy)" }}
