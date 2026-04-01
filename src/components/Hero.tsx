@@ -2,7 +2,7 @@ const CTA_URL = "https://raquel-vazquez.quaderno.io/checkout/personal-os-2";
 
 export default function Hero() {
   return (
-    <section className="pt-28 pb-16 md:pt-40 md:pb-24 px-6 relative overflow-hidden" style={{ backgroundColor: "var(--bg)" }}>
+    <section className="pt-28 pb-16 md:pt-40 md:pb-24 px-6" style={{ backgroundColor: "var(--bg)" }}>
       <div className="max-w-3xl mx-auto text-center">
         <p
           className="text-xs font-semibold mb-8 tracking-[0.2em] uppercase"
@@ -86,14 +86,6 @@ export default function Hero() {
         </p>
       </div>
 
-      {/* Decorative illustration */}
-      <img
-        src="/illustrations/focus.svg"
-        alt=""
-        aria-hidden="true"
-        className="hidden md:block absolute right-8 bottom-4 opacity-15 pointer-events-none"
-        style={{ width: "180px", height: "auto" }}
-      />
     </section>
   );
 }

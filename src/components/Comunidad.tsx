@@ -30,21 +30,12 @@ export default function Comunidad() {
           Es un hábito que se construye mejor acompañado.
         </p>
 
-        <div className="flex justify-center mb-10">
-          <img
-            src="/illustrations/community.svg"
-            alt=""
-            aria-hidden="true"
-            style={{ width: "160px", height: "auto", opacity: 0.85 }}
-          />
-        </div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           <div
             className="rounded-2xl p-7"
             style={{ backgroundColor: "var(--card)", boxShadow: "var(--shadow)" }}
           >
-            <img src="/illustrations/cowork.svg" alt="" aria-hidden="true" className="mb-4" style={{ width: "48px", height: "48px" }} />
+            <span className="text-3xl block mb-4">⚡</span>
             <h3
               className="text-base font-bold mb-2"
               style={{ fontFamily: "var(--font-work)", color: "var(--navy)" }}
@@ -64,7 +55,7 @@ export default function Comunidad() {
             className="rounded-2xl p-7"
             style={{ backgroundColor: "var(--card)", boxShadow: "var(--shadow)" }}
           >
-            <img src="/illustrations/qa.svg" alt="" aria-hidden="true" className="mb-4" style={{ width: "48px", height: "48px" }} />
+            <span className="text-3xl block mb-4">🎯</span>
             <h3
               className="text-base font-bold mb-2"
               style={{ fontFamily: "var(--font-work)", color: "var(--navy)" }}
@@ -84,7 +75,7 @@ export default function Comunidad() {
             className="rounded-2xl p-7"
             style={{ backgroundColor: "var(--card)", boxShadow: "var(--shadow)" }}
           >
-            <img src="/illustrations/team.svg" alt="" aria-hidden="true" className="mb-4" style={{ width: "48px", height: "48px" }} />
+            <span className="text-3xl block mb-4">🤝</span>
             <h3
               className="text-base font-bold mb-2"
               style={{ fontFamily: "var(--font-work)", color: "var(--navy)" }}

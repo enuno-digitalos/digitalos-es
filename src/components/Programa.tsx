@@ -1,12 +1,12 @@
 const levels = [
   {
-    icon: "/illustrations/target.svg",
+    emoji: "🗺️",
     title: "La visión completa del sistema",
     body: "Antes de tocar nada, entiendes cómo encaja todo. Dejas de saltar de herramienta en herramienta sin rumbo. Ves el mapa completo por primera vez.",
     items: [],
   },
   {
-    icon: "/illustrations/plan.svg",
+    emoji: "🧭",
     title: "Tu base: quién eres y cómo trabajas",
     body: "El cimiento que nadie te enseña. Defines qué necesitas realmente, eliminas lo que sobra y diseñas tu forma de funcionar antes de abrir ninguna app.",
     items: [
@@ -16,7 +16,7 @@ const levels = [
     ],
   },
   {
-    icon: "/illustrations/email.svg",
+    emoji: "⏱️",
     title: "Email, tareas y tiempo bajo control",
     body: "Lo que más duele, resuelto primero. De 120.000 emails a bandeja controlada. De apagar fuegos a saber qué toca cada día.",
     items: [
@@ -27,7 +27,7 @@ const levels = [
     ],
   },
   {
-    icon: "/illustrations/workspace.svg",
+    emoji: "🧠",
     title: "Todo en un lugar (no en seis)",
     body: "Archivos, notas, contraseñas, ideas, proyectos. Un solo sitio donde encuentras cualquier cosa en segundos. Tu cerebro digital.",
     items: [
@@ -38,7 +38,7 @@ const levels = [
     ],
   },
   {
-    icon: "/illustrations/launch.svg",
+    emoji: "⚡",
     title: "La IA trabaja para ti",
     body: "Cuando hay orden, la IA multiplica tu capacidad. Revisiones semanales, tu primer asistente digital y automatizaciones que te devuelven horas.",
     items: [
@@ -81,7 +81,7 @@ export default function Programa() {
               style={{ backgroundColor: "var(--card)", boxShadow: "var(--shadow)" }}
             >
               <div className="flex items-start gap-4">
-                <img src={l.icon} alt="" aria-hidden="true" className="shrink-0" style={{ width: "56px", height: "56px" }} />
+                <span className="text-3xl shrink-0">{l.emoji}</span>
                 <div className="flex-1">
                   <h3
                     className="text-lg font-bold mb-2"
