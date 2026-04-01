@@ -41,12 +41,12 @@ const levels = [
   },
   {
     emoji: "⚡",
-    title: "La IA trabaja para ti",
-    body: "Cuando hay orden, la IA multiplica tu capacidad. Este nivel es lo que hace que todo se sostenga. Lo que convierte tu sistema en parte de tu vida.",
+    title: "Que el sistema se sostenga solo",
+    body: "Este nivel es lo que hace que todo funcione semana tras semana. Lo que convierte tu sistema en parte de tu vida, no en otra tarea más.",
     items: [
       "Una revisión semanal en 15 minutos que te da claridad para toda la semana",
-      "Tu primer asistente con Claude que conoce tu contexto",
-      "Automatizaciones simples que eliminan tareas repetitivas para siempre",
+      "Criterios simples para ajustar tu sistema y mantenerlo al día sin volver al caos",
+      "Siempre claro en qué estás, qué toca y qué no",
     ],
   },
 ];
