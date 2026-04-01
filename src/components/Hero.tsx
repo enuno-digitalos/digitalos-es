@@ -12,7 +12,8 @@ export default function Hero() {
           <br />
           Archivos perdidos.{" "}
 
-          <span className="inline" style={{ backgroundImage: "linear-gradient(to top, var(--peach) 35%, transparent 35%)", paddingLeft: "0.15em", paddingRight: "0.15em" }}>Contraseñas olvidadas.</span>
+
+          <span className="inline" style={{ backgroundColor: "var(--peach)", paddingLeft: "0.15em", paddingRight: "0.15em" }}>Contraseñas olvidadas.</span>
           <br />
           <span className="text-[1.6rem] md:text-[2.4rem]" style={{ color: "var(--muted)" }}>
             La IA avanzando sin ti.
