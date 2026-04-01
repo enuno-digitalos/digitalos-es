@@ -18,16 +18,16 @@ export default function Comunidad() {
           className="text-base mb-4 max-w-2xl leading-relaxed"
           style={{ fontFamily: "var(--font-work)", color: "var(--muted)" }}
         >
-          Accedes a los contenidos, sí. Pero esto avanza rápido: cada semana hay
-          trucos nuevos, formas mejores de hacer las cosas, herramientas que cambian.
-          Por eso el sistema incluye comunidad.
+          Organizar tu vida digital no es aprender algo una vez. Es construir hábitos.
+          Y los hábitos no se construyen solos, leyendo, ni viendo vídeos.
+          Se construyen haciendo. Con ritmo. Con gente al lado.
         </p>
         <p
           className="text-base mb-12 max-w-2xl leading-relaxed"
           style={{ fontFamily: "var(--font-work)", color: "var(--navy)", fontWeight: 500 }}
         >
-          Porque organizar tu vida digital no es algo que hagas una vez y te olvides.
-          Es un hábito que se construye mejor acompañado.
+          El Club de Enfocados es donde dejas de aprender y empiezas a transformarte.
+          Aquí no vienes a consumir contenido. Vienes a pasar a la acción.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -40,14 +40,15 @@ export default function Comunidad() {
               className="text-base font-bold mb-2"
               style={{ fontFamily: "var(--font-work)", color: "var(--navy)" }}
             >
-              2 sesiones de trabajo conjunto al mes
+              2 sesiones de coworking al mes
             </h3>
             <p
               className="text-sm leading-relaxed"
               style={{ fontFamily: "var(--font-work)", color: "var(--muted)" }}
             >
-              Nos conectamos, trabajamos y avanzamos juntos. Lo que no haces
-              solo, lo haces acompañado.
+              Nos conectamos y avanzamos juntos en tiempo real.
+              Tú con tus tareas, los demás con las suyas. Sin distracciones,
+              sin excusas. Lo que llevas posponiendo semanas, se hace en una sesión.
             </p>
           </div>
 
@@ -60,14 +61,15 @@ export default function Comunidad() {
               className="text-base font-bold mb-2"
               style={{ fontFamily: "var(--font-work)", color: "var(--navy)" }}
             >
-              1 sesión temática + preguntas cada 15 días
+              Sesión temática + Q&A cada 15 días
             </h3>
             <p
               className="text-sm leading-relaxed"
               style={{ fontFamily: "var(--font-work)", color: "var(--muted)" }}
             >
-              Raquel en directo resolviendo dudas reales y profundizando en
-              lo que importa. Sin relleno.
+              Raquel en directo profundizando en lo que necesitas y
+              resolviendo dudas reales. No teoría de relleno: lo que te bloquea ahora,
+              resuelto ahora.
             </p>
           </div>
 
@@ -80,14 +82,15 @@ export default function Comunidad() {
               className="text-base font-bold mb-2"
               style={{ fontFamily: "var(--font-work)", color: "var(--navy)" }}
             >
-              Gente real con los mismos retos
+              Tu accountability partner
             </h3>
             <p
               className="text-sm leading-relaxed"
               style={{ fontFamily: "var(--font-work)", color: "var(--muted)" }}
             >
-              Sin juicios, sin preguntas tontas. Aquí nadie te mira raro
-              por no saber algo. Se aprende haciendo, juntos.
+              Alguien que va al mismo ritmo que tú, con quien compartir avances
+              y empujarte mutuamente. Porque cuando alguien te espera,
+              es mucho más difícil dejarlo para mañana.
             </p>
           </div>
         </div>

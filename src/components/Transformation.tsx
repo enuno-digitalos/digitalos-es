@@ -114,6 +114,18 @@ export default function Transformation() {
             </div>
           ))}
         </div>
+
+        <div className="text-center mt-14">
+          <a
+            href="https://raquel-vazquez.quaderno.io/checkout/personal-os-2"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center font-semibold px-10 py-4 rounded-full text-white transition hover:opacity-90"
+            style={{ fontFamily: "var(--font-work)", backgroundColor: "var(--orange)" }}
+          >
+            Quiero poner orden →
+          </a>
+        </div>
       </div>
     </section>
   );

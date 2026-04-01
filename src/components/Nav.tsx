@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const CTA_URL = "https://enuno.quadernoapp.com/checkout/session/3453a4b04426bf11672b37a06cddf8f2fcb7b933/init";
+const CTA_URL = "https://raquel-vazquez.quaderno.io/checkout/personal-os-2";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -23,7 +23,7 @@ export default function Nav() {
 
         <div className="hidden md:flex items-center gap-7 text-[0.85rem]" style={{ fontFamily: "var(--font-work)", color: "var(--muted)" }}>
           <a href="#programa" className="hover:text-[var(--navy)] transition">Programa</a>
-          <a href="#testimonios" className="hover:text-[var(--navy)] transition">Testimonios</a>
+          <a href="#resenas" className="hover:text-[var(--navy)] transition">Reseñas</a>
           <a href="#sobre-mi" className="hover:text-[var(--navy)] transition">Sobre mí</a>
           <a href="#faq" className="hover:text-[var(--navy)] transition">FAQ</a>
         </div>
@@ -61,7 +61,7 @@ export default function Nav() {
       {open && (
         <div className="md:hidden px-6 py-5 space-y-3 border-t" style={{ borderColor: "var(--border)", backgroundColor: "var(--bg)" }}>
           <a href="#programa" onClick={() => setOpen(false)} className="block text-sm py-1" style={{ color: "var(--muted)" }}>Programa</a>
-          <a href="#testimonios" onClick={() => setOpen(false)} className="block text-sm py-1" style={{ color: "var(--muted)" }}>Testimonios</a>
+          <a href="#resenas" onClick={() => setOpen(false)} className="block text-sm py-1" style={{ color: "var(--muted)" }}>Reseñas</a>
           <a href="#sobre-mi" onClick={() => setOpen(false)} className="block text-sm py-1" style={{ color: "var(--muted)" }}>Sobre mí</a>
           <a href="#faq" onClick={() => setOpen(false)} className="block text-sm py-1" style={{ color: "var(--muted)" }}>FAQ</a>
           <div className="pt-3 space-y-2">

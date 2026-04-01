@@ -29,9 +29,9 @@ export default function Home() {
         <GoogleReviews />
         <Oferta />
         <FAQ />
+        <OtrosPrograms />
         <Newsletter />
         <CTAFinal />
-        <OtrosPrograms />
       </main>
       <Footer />
     </>
