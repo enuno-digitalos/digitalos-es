@@ -24,8 +24,8 @@ export default function Hero() {
           className="text-[1.4rem] md:text-[2.2rem] leading-[1.2] mb-10"
           style={{ fontFamily: "var(--font-libre), 'Libre Baskerville', serif", color: "var(--navy)" }}
         >
-          Y una sola decisión que{" "}
-          <span style={{ color: "var(--orange)" }}>lo cambia todo.</span>
+          Imagina abrir tu ordenador y{" "}
+          <span style={{ color: "var(--orange)" }}>sentir calma.</span>
         </h2>
 
         <p
