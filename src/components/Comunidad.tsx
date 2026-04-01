@@ -12,7 +12,7 @@ export default function Comunidad() {
           className="text-3xl md:text-[2.8rem] leading-tight mb-6"
           style={{ fontFamily: "var(--font-libre)", color: "var(--navy)" }}
         >
-          Tu primer año en el Club de Enfocados.
+          Descubre el Club de Enfocados.
         </h2>
         <p
           className="text-base mb-4 max-w-2xl leading-relaxed"
