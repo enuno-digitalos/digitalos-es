@@ -30,6 +30,15 @@ export default function Comunidad() {
           Es un hábito que se construye mejor acompañado.
         </p>
 
+        <div className="flex justify-center mb-10">
+          <img
+            src="/illustrations/community.svg"
+            alt=""
+            aria-hidden="true"
+            style={{ width: "160px", height: "auto", opacity: 0.85 }}
+          />
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           <div
             className="rounded-2xl p-7"

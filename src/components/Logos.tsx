@@ -10,7 +10,7 @@ const logos = [
   { src: "/logos/incognito.png", alt: "Incógnito Content Mastery", h: 30 },
   { src: "/logos/doppamine.png", alt: "Doppamine", h: 24 },
   { src: "/logos/paloma-fernandez.png", alt: "Paloma Fernández", h: 28 },
-  { src: "/logos/founderz.webp", alt: "Founderz", h: 52 },
+  { src: "/logos/founderz.webp", alt: "Founderz", h: 64 },
 ];
 
 export default function Logos() {
