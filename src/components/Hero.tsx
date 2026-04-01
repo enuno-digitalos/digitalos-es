@@ -10,7 +10,10 @@ export default function Hero() {
         >
           120.000 emails sin leer.
           <br />
-          Archivos perdidos. Contraseñas olvidadas.
+          Archivos perdidos.{" "}
+          <span style={{ backgroundImage: "linear-gradient(to top, var(--peach) 35%, transparent 35%)" }}>
+            Contraseñas olvidadas.
+          </span>
           <br />
           <span className="text-[1.6rem] md:text-[2.4rem]" style={{ color: "var(--muted)" }}>
             La IA avanzando sin ti.
