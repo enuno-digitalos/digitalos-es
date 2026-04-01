@@ -18,7 +18,8 @@ export default function SobreMi() {
             <div className="space-y-4 text-white/80" style={{ fontFamily: "var(--font-work)" }}>
               <p className="text-base leading-relaxed">
                 Llevo años ayudando a emprendedores a poner orden en su vida digital.
-                Primero en programas de otros, ahora en los míos.
+                Primero formando en escuelas de negocio y programas de emprendimiento,
+                ahora con mis propias propuestas de transformación.
               </p>
               <p className="text-base leading-relaxed">
                 Demasiadas herramientas, demasiada información, muy poco sistema.
