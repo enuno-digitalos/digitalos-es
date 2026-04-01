@@ -10,8 +10,7 @@ const incluye = [
 const bonus = [
   { emoji: "🎓", text: "Masterclass ChatGPT", valor: "valor 97€" },
   { emoji: "📋", text: "Masterclass Notion", valor: "valor 97€" },
-  { emoji: "🤖", text: "Masterclass: tu primer asistente con Claude", valor: "valor 49€" },
-  { emoji: "👥", text: "1 año en Club de Enfocados", valor: "valor 97€" },
+  { emoji: "🤖", text: "Masterclass: tu primer asistente con Claude", valor: "valor 147€" },
 ];
 
 export default function Oferta() {
@@ -129,7 +128,7 @@ export default function Oferta() {
             className="text-sm mt-6 font-semibold"
             style={{ fontFamily: "var(--font-work)", color: "var(--muted)" }}
           >
-            Valor total de los bonuses: 340€+
+            Valor total de los bonuses: 341€
           </p>
         </div>
       </div>
