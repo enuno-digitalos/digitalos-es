@@ -4,13 +4,6 @@ export default function Hero() {
   return (
     <section className="pt-28 pb-16 md:pt-40 md:pb-24 px-6" style={{ backgroundColor: "var(--bg)" }}>
       <div className="max-w-3xl mx-auto text-center">
-        <p
-          className="text-xs font-semibold mb-8 tracking-[0.2em] uppercase"
-          style={{ fontFamily: "var(--font-work)", color: "var(--orange)" }}
-        >
-          DIGITAL OS PERSONAL
-        </p>
-
         <h1
           className="text-[2.2rem] md:text-[3.6rem] leading-[1.12] mb-4"
           style={{ fontFamily: "var(--font-libre), 'Libre Baskerville', serif", color: "var(--navy)" }}
@@ -18,23 +11,27 @@ export default function Hero() {
           120.000 emails sin leer.
           <br />
           Archivos perdidos. Contraseñas olvidadas.
+          <br />
+          <span className="text-[1.6rem] md:text-[2.4rem]" style={{ color: "var(--muted)" }}>
+            La IA avanzando sin ti.
+          </span>
         </h1>
 
-        <h2
-          className="text-[1.4rem] md:text-[2.2rem] leading-[1.2] mb-10"
+        <p
+          className="text-[1.4rem] md:text-[2rem] leading-[1.3] mt-8 mb-4"
           style={{ fontFamily: "var(--font-libre), 'Libre Baskerville', serif", color: "var(--navy)" }}
         >
-          Imagina abrir tu ordenador y{" "}
-          <span style={{ color: "var(--orange)" }}>sentir calma.</span>
-        </h2>
+          Respira.{" "}
+          <span style={{ color: "var(--orange)" }}>Para esto hay un sistema.</span>
+        </p>
 
         <p
           className="text-lg md:text-xl leading-relaxed mb-12 max-w-2xl mx-auto"
           style={{ fontFamily: "var(--font-work)", color: "var(--muted)" }}
         >
-          Si hay caos, la IA amplifica tu caos. Si hay orden, la IA lo potencia.
-          Esto no es un método ni un curso más. Es un mapa y una hoja de ruta
-          para organizar tu vida digital a tu manera, con tus cosas, a tu ritmo.
+          Digital OS Personal. Tu mapa para organizar tu vida digital.
+          <br />
+          A tu manera. A tu ritmo.
         </p>
 
         {/* Social proof */}
