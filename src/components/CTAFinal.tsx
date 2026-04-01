@@ -46,7 +46,7 @@ export default function CTAFinal() {
             color: "var(--muted)",
           }}
         >
-          14 días de garantía. Devolución del 100%, sin preguntas.
+          Dinero feliz. Si no es para ti, te lo devuelvo.
         </p>
       </div>
     </section>

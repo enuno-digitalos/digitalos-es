@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: "¿Qué pasa si no me convence?",
-    a: "Tienes 14 días para probarlo. Si no es para ti, devolución del 100% sin preguntas.",
+    a: "Quiero dinero feliz: yo feliz de recibirlo y tú de dármelo. Si después de entrar sientes que no es para ti y me cuentas el porqué, te devuelvo el dinero. Sin más.",
   },
   {
     q: "¿Cuánto tiempo necesito dedicarle a la semana?",

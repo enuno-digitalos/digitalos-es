@@ -94,7 +94,10 @@ export default function Oferta() {
             className="text-sm mt-6 max-w-md mx-auto leading-relaxed"
             style={{ fontFamily: "var(--font-work)", color: "var(--muted)" }}
           >
-            14 días de garantía. Devolución del 100%, sin preguntas.
+            Quiero dinero feliz: yo feliz de recibirlo y tú de dármelo.
+            Si después de entrar sientes que no es para ti y me cuentas
+            el porqué, te devuelvo el dinero. Sin más.
+            Y si todavía tienes dudas, quizá es mejor esperar al momento adecuado.
           </p>
         </div>
 
