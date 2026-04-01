@@ -1,26 +1,25 @@
 const CTA_URL = "https://raquel-vazquez.quaderno.io/checkout/personal-os-2";
 
 const incluye = [
-  "4 niveles completos de formaci\u00f3n",
-  "Gu\u00edas descargables y plantillas listas para usar",
+  "4 niveles completos de formación",
+  "Guías descargables y plantillas listas para usar",
   "Sesiones en directo de preguntas y respuestas",
-  "Buz\u00f3n de sugerencias: pide lo que necesitas",
+  "Buzón de sugerencias: pide lo que necesitas",
   "Actualizaciones de por vida",
   "Acceso desde el primer minuto",
 ];
 
 const bonus = [
-  { emoji: "\u{1F393}", text: "Masterclass ChatGPT", valor: "valor 97\u20ac" },
-  { emoji: "\u{1F4CB}", text: "Masterclass Notion", valor: "valor 97\u20ac" },
-  { emoji: "\u{1F916}", text: "Masterclass ecosistema Claude", valor: "valor 49\u20ac" },
-  { emoji: "\u{1F465}", text: "1 a\u00f1o en Club de Enfocados", valor: "valor 97\u20ac" },
+  { emoji: "🎓", text: "Masterclass ChatGPT", valor: "valor 97€" },
+  { emoji: "📋", text: "Masterclass Notion", valor: "valor 97€" },
+  { emoji: "🤖", text: "Masterclass ecosistema Claude", valor: "valor 49€" },
+  { emoji: "👥", text: "1 año en Club de Enfocados", valor: "valor 97€" },
 ];
 
 export default function Oferta() {
   return (
     <section className="py-20 px-6" style={{ backgroundColor: "var(--bg-alt)" }}>
       <div className="max-w-3xl mx-auto">
-        {/* Header */}
         <p
           className="text-sm font-semibold mb-3 tracking-wide"
           style={{ fontFamily: "var(--font-work)", color: "var(--orange)" }}
@@ -34,7 +33,6 @@ export default function Oferta() {
           Todo lo que incluye Digital OS Personal
         </h2>
 
-        {/* Included list */}
         <div
           className="rounded-2xl p-7 md:p-10 mb-8"
           style={{ backgroundColor: "var(--card)", boxShadow: "var(--shadow)" }}
@@ -46,7 +44,7 @@ export default function Oferta() {
                   className="shrink-0 mt-0.5 text-lg font-bold"
                   style={{ color: "var(--orange)" }}
                 >
-                  \u2713
+                  ✓
                 </span>
                 <span
                   className="text-base"
@@ -59,7 +57,6 @@ export default function Oferta() {
           </div>
         </div>
 
-        {/* Price card */}
         <div
           className="rounded-2xl p-8 md:p-12 mb-8 text-center"
           style={{ backgroundColor: "var(--card)", boxShadow: "var(--shadow)" }}
@@ -68,19 +65,19 @@ export default function Oferta() {
             className="text-5xl md:text-6xl font-bold mb-2"
             style={{ fontFamily: "var(--font-work)", color: "var(--navy)" }}
           >
-            397\u20ac
+            397€
             <span
               className="text-xl font-normal ml-1"
               style={{ color: "var(--muted)" }}
             >
-              + IVA/a\u00f1o
+              + IVA/año
             </span>
           </p>
           <p
             className="text-base mb-10"
             style={{ fontFamily: "var(--font-work)", color: "var(--muted)" }}
           >
-            Menos de 1,10\u20ac al d\u00eda por tener tu vida digital bajo control.
+            Menos de 1,10€ al día por tener tu vida digital bajo control.
           </p>
           <a
             href={CTA_URL}
@@ -93,17 +90,16 @@ export default function Oferta() {
               color: "#fff",
             }}
           >
-            Quiero poner orden \u2192
+            Quiero poner orden →
           </a>
           <p
             className="text-sm mt-6 max-w-md mx-auto leading-relaxed"
             style={{ fontFamily: "var(--font-work)", color: "var(--muted)" }}
           >
-            Garant\u00eda de devoluci\u00f3n de 14 d\u00edas. Sin preguntas.
+            Garantía de devolución de 14 días. Sin preguntas.
           </p>
         </div>
 
-        {/* Bonuses */}
         <div
           className="rounded-2xl p-7 md:p-10"
           style={{ backgroundColor: "var(--card)", boxShadow: "var(--shadow)" }}
@@ -112,7 +108,7 @@ export default function Oferta() {
             className="text-xl md:text-2xl mb-6"
             style={{ fontFamily: "var(--font-libre)", color: "var(--navy)" }}
           >
-            Y adem\u00e1s, estos bonuses:
+            Y además, estos bonuses:
           </h3>
           <div className="space-y-4">
             {bonus.map((b, i) => (
@@ -132,7 +128,7 @@ export default function Oferta() {
             className="text-sm mt-6 font-semibold"
             style={{ fontFamily: "var(--font-work)", color: "var(--muted)" }}
           >
-            Valor total de los bonuses: 340\u20ac+
+            Valor total de los bonuses: 340€+
           </p>
         </div>
       </div>

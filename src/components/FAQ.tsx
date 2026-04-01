@@ -4,28 +4,28 @@ import { useState } from "react";
 
 const faqs = [
   {
-    q: "\u00bfNo tengo tiempo para un curso m\u00e1s, es realmente pr\u00e1ctico?",
-    a: "No es un curso que te obliga a sentarte 3 horas. Son niveles cortos que aplicas en tu d\u00eda a d\u00eda. La mayor\u00eda de personas ven resultados en la primera semana.",
+    q: "¿No tengo tiempo para un curso más, es realmente práctico?",
+    a: "No es un curso que te obliga a sentarte 3 horas. Son niveles cortos que aplicas en tu día a día. La mayoría de personas ven resultados en la primera semana.",
   },
   {
-    q: "Soy bastante torpe con la tecnolog\u00eda. \u00bfPodr\u00e9 seguirlo?",
-    a: "Digital OS Personal est\u00e1 dise\u00f1ado exactamente para ti. No asumimos que sabes nada. Cada paso est\u00e1 explicado como si estuvieras al lado de Raquel.",
+    q: "Soy bastante torpe con la tecnología. ¿Podré seguirlo?",
+    a: "Digital OS Personal está diseñado exactamente para ti. No asumimos que sabes nada. Cada paso está explicado como si estuvieras al lado de Raquel.",
   },
   {
     q: "He intentado ordenar mi vida digital mil veces y siempre vuelvo al caos.",
-    a: "Porque usabas herramientas sin sistema. Aqu\u00ed primero dise\u00f1as el sistema y luego colocas las herramientas. Por eso funciona de forma permanente.",
+    a: "Porque usabas herramientas sin sistema. Aquí primero diseñas el sistema y luego colocas las herramientas. Por eso funciona de forma permanente.",
   },
   {
-    q: "\u00bfY si es demasiado tarde para m\u00ed? Mi desorden es enorme.",
-    a: "Hemos acompa\u00f1ado a personas con m\u00e1s de 120.000 emails sin leer. No importa el punto de partida. El sistema funciona porque es progresivo.",
+    q: "¿Y si es demasiado tarde para mí? Mi desorden es enorme.",
+    a: "Hemos acompañado a personas con más de 120.000 emails sin leer. No importa el punto de partida. El sistema funciona porque es progresivo.",
   },
   {
-    q: "\u00bfQu\u00e9 pasa si no me convence?",
-    a: "Tienes 14 d\u00edas para probarlo. Si no te convence, te devolvemos el 100% sin preguntas.",
+    q: "¿Qué pasa si no me convence?",
+    a: "Tienes 14 días para probarlo. Si no te convence, te devolvemos el 100% sin preguntas.",
   },
   {
-    q: "\u00bfCu\u00e1nto tiempo necesito dedicarle a la semana?",
-    a: "Entre 2 y 3 horas semanales para avanzar c\u00f3modamente. Puedes ir m\u00e1s r\u00e1pido o m\u00e1s lento, el acceso es ilimitado.",
+    q: "¿Cuánto tiempo necesito dedicarle a la semana?",
+    a: "Entre 2 y 3 horas semanales para avanzar cómodamente. Puedes ir más rápido o más lento, el acceso es ilimitado.",
   },
 ];
 
@@ -54,7 +54,7 @@ export default function FAQ() {
             >
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                className="w-full text-left px-6 py-5 flex items-center justify-between gap-4"
+                className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 cursor-pointer"
               >
                 <span
                   className="font-medium text-sm"
@@ -66,7 +66,7 @@ export default function FAQ() {
                   className="shrink-0 text-xl leading-none select-none"
                   style={{ color: "var(--muted)" }}
                 >
-                  {openIndex === i ? "\u2212" : "+"}
+                  {openIndex === i ? "−" : "+"}
                 </span>
               </button>
               {openIndex === i && (
