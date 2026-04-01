@@ -10,7 +10,7 @@ const incluye = [
 const bonus = [
   { emoji: "🎓", text: "Masterclass ChatGPT", valor: "valor 97€" },
   { emoji: "📋", text: "Masterclass Notion", valor: "valor 97€" },
-  { emoji: "🤖", text: "Masterclass: tu primer asistente IA", valor: "valor 49€" },
+  { emoji: "🤖", text: "Masterclass: tu primer asistente con Claude", valor: "valor 49€" },
   { emoji: "👥", text: "1 año en Club de Enfocados", valor: "valor 97€" },
 ];
 
