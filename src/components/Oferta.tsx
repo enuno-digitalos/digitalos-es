@@ -4,7 +4,6 @@ const incluye = [
   "4 niveles: tu mapa y hoja de ruta completos",
   "Guías descargables y plantillas listas para usar",
   "1 año en el Club de Enfocados (sesiones de trabajo + Q&A)",
-  "Actualizaciones de por vida",
   "Acceso inmediato, avanza a tu ritmo",
 ];
 
