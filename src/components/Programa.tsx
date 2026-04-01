@@ -2,27 +2,50 @@ const levels = [
   {
     emoji: "🗺️",
     title: "La visión completa del sistema",
-    body: "Entiendes cómo encaja todo antes de tocar nada. Sin agobio, sin prisas.",
+    body: "Antes de tocar nada, entiendes cómo encaja todo. Dejas de saltar de herramienta en herramienta sin rumbo. Ves el mapa completo por primera vez.",
+    items: [],
   },
   {
     emoji: "🧭",
-    title: "SER · HACER · TENER",
-    body: "Tu base personal: qué quieres, cómo trabajas, qué necesitas. El cimiento que nadie te enseña.",
+    title: "Tu base: quién eres y cómo trabajas",
+    body: "El cimiento que nadie te enseña. Defines qué necesitas realmente, eliminas lo que sobra y diseñas tu forma de funcionar antes de abrir ninguna app.",
+    items: [
+      "Dejar de empezar cada semana desde cero",
+      "Saber qué es importante HOY sin listas infinitas",
+      "Un sistema de prioridades que funciona sin fuerza de voluntad",
+    ],
   },
   {
     emoji: "⏱️",
-    title: "Tiempo, tareas y email",
-    body: "Los imprescindibles: de 120.000 emails a bandeja controlada. De caos de tareas a sistema claro.",
+    title: "Email, tareas y tiempo bajo control",
+    body: "Lo que más duele, resuelto primero. De 120.000 emails a bandeja controlada. De apagar fuegos a saber qué toca cada día.",
+    items: [
+      "Reglas automáticas que filtran tu correo sin que toques nada",
+      "Carpetas inteligentes para encontrar cualquier email en segundos",
+      "Un sistema de tareas que cabe en tu cabeza",
+      "Atajos y expansores de texto que te ahorran horas de escritura repetitiva",
+    ],
   },
   {
     emoji: "🧠",
-    title: "Tu BrainBox digital",
-    body: "El sistema que conecta todo: archivos, notas, contraseñas, proyectos. Un lugar, no seis.",
+    title: "Todo en un lugar (no en seis)",
+    body: "Archivos, notas, contraseñas, ideas, proyectos. Un solo sitio donde encuentras cualquier cosa en segundos. Tu cerebro digital.",
+    items: [
+      "Sincronizar todos tus dispositivos para tener lo mismo en el móvil y el ordenador",
+      "Organizar carpetas con un sistema que se mantiene solo",
+      "Capturar cualquier idea, enlace o referencia sin que se pierda nunca",
+      "Tu contexto personal listo para que la IA te ayude de verdad (no con respuestas genéricas)",
+    ],
   },
   {
     emoji: "⚡",
-    title: "Optimización + IA",
-    body: "Revisiones semanales y tu primer asistente IA. El sistema se mantiene solo.",
+    title: "La IA trabaja para ti",
+    body: "Cuando hay orden, la IA multiplica tu capacidad. Revisiones semanales, tu primer asistente digital y automatizaciones que te devuelven horas.",
+    items: [
+      "Una revisión semanal en 15 minutos que te da claridad para toda la semana",
+      "Tu asistente IA personalizado que conoce tu contexto y te da respuestas útiles",
+      "Automatizaciones simples que eliminan tareas repetitivas para siempre",
+    ],
   },
 ];
 
@@ -47,30 +70,47 @@ export default function Programa() {
           style={{ fontFamily: "var(--font-work)", color: "var(--muted)" }}
         >
           No es un curso que devoras y olvidas. Es un sistema que aplicas desde el día uno.
+          Cada nivel resuelve un dolor concreto.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="space-y-5">
           {levels.map((l, i) => (
             <div
               key={i}
-              className={`rounded-2xl p-7 md:p-8 transition hover:shadow-md${
-                i === 0 ? " md:col-span-2" : ""
-              }`}
+              className="rounded-2xl p-7 md:p-8"
               style={{ backgroundColor: "var(--card)", boxShadow: "var(--shadow)" }}
             >
-              <span className="text-4xl block mb-4">{l.emoji}</span>
-              <h3
-                className="text-lg font-bold mb-2"
-                style={{ fontFamily: "var(--font-work)", color: "var(--navy)" }}
-              >
-                {l.title}
-              </h3>
-              <p
-                className="text-sm leading-relaxed"
-                style={{ fontFamily: "var(--font-work)", color: "var(--muted)" }}
-              >
-                {l.body}
-              </p>
+              <div className="flex items-start gap-4">
+                <span className="text-3xl shrink-0">{l.emoji}</span>
+                <div className="flex-1">
+                  <h3
+                    className="text-lg font-bold mb-2"
+                    style={{ fontFamily: "var(--font-work)", color: "var(--navy)" }}
+                  >
+                    {l.title}
+                  </h3>
+                  <p
+                    className="text-sm leading-relaxed mb-3"
+                    style={{ fontFamily: "var(--font-work)", color: "var(--muted)" }}
+                  >
+                    {l.body}
+                  </p>
+                  {l.items.length > 0 && (
+                    <ul className="space-y-1.5">
+                      {l.items.map((item, j) => (
+                        <li
+                          key={j}
+                          className="flex items-start gap-2 text-sm"
+                          style={{ fontFamily: "var(--font-work)", color: "var(--text)" }}
+                        >
+                          <span className="shrink-0 mt-0.5" style={{ color: "var(--orange)" }}>✓</span>
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              </div>
             </div>
           ))}
         </div>
