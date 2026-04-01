@@ -12,9 +12,9 @@ export default function CTAFinal() {
             color: "var(--navy)",
           }}
         >
-          No necesitas más información.
+          Si has llegado hasta aquí,
           <br />
-          Necesitas implementar.
+          es porque sabes que algo tiene que cambiar.
         </h2>
         <p
           className="text-lg mb-10"
@@ -23,8 +23,8 @@ export default function CTAFinal() {
             color: "var(--muted)",
           }}
         >
-          Digital OS Personal es el sistema con el que por fin pones orden. De
-          verdad. 397€ + IVA/año.
+          No hace falta que lo tengas claro del todo.
+          Solo hace falta que des el primer paso. El sistema te guía desde ahí.
         </p>
         <a
           href="https://raquel-vazquez.quaderno.io/checkout/personal-os-2"
